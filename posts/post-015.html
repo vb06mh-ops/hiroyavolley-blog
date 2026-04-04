@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】トスが伸びて割れたときの対処法 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】トスが伸びて・割れたときの効果的な対処法</h1>
+        <p class="post-meta">2024.04.15 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          トスが「伸びすぎて割れる」パターンは、セッターにとっても、スパイカーにとっても厄介な状況です。
+          ボールがネットから遠くなりすぎると、打てるコースが極端に限られてしまいます。
+          この動画では、トスが伸びて割れたときの具体的な対処法について、
+          ぼく自身の考えをもとに詳しく解説しています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/aO5MrYnGM9A" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>トスが伸びたとき、スパイカーは早めに「追いかけるか？止めるか？」を判断する</li>
+          <li>伸びたトスはアウトサイドからのクロスが比較的打ちやすくなるケースがある</li>
+          <li>セッターは伸びすぎたと感じた瞬間に「待て」や「ごめん」を声で伝える習慣を</li>
+          <li>スパイカーとセッターが同じ状況認識を持てるようにする平時の練習が重要</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          トスが伸びたときに一番困るのは「打つか打たないか」の判断が遅れること。
+          ぼくが大切にしているのは、早い段階での決断です。
+          伸びているとわかった瞬間に「プッシュで返す」と決めて、迷わず動く。
+          迷いがあると全部中途半端になってしまいますから。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          トスが伸びる場面は試合の中では避けられません。
+          そのときに落ち着いて対処できるかどうかで、チームの失点を防げます。
+          「決断を早くする」ことを日頃の練習から意識してみてください。
+          一緒に対応力を高めていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

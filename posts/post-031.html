@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】ストレートスパイクを成功させるために意識していること — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】ストレートスパイクを成功させるために意識していること</h1>
+        <p class="post-meta">2024.05.01 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          ストレートスパイクはラインギリギリを狙う高度な技術です。
+          決まれば得点になりやすいですが、ラインアウトのリスクも高い。
+          ぼくがストレートスパイクを成功させるために意識していることを、
+          体の向き・手首の使い方・狙うコースの考え方まで詳しく解説します。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/3-rrZtQ0ZxA" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>ストレートを打つには体の向き（打つ方向への正対）が最も重要</li>
+          <li>手首を内側に返すことで角度をつけてストレートコースに打ち込む</li>
+          <li>相手ブロッカーが「クロスを意識している」タイミングを狙う</li>
+          <li>ストレートは「急に使う」より「クロスとのコンビ」で活きる技術</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          ストレートって、体の向きが全てだと感じています。
+          手首だけで無理やり打ってもラインアウトになりやすい。
+          ぼくが意識しているのは、ジャンプの段階で既に体がストレート方向を向いていること。
+          そこから腕を振れば、自然にストレートコースに打てるようになります。
+          体と腕の連動を意識してみてください。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          ストレートスパイクを武器にすると、クロスとの組み合わせで相手守備が守りきれなくなります。
+          体の向きと手首の使い方を練習で繰り返し確認して、
+          試合で使える技術として定着させましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

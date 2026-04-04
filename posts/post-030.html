@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】スパイクを打つとき何を考えているか（強弱の組み立て） — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】スパイクを打つとき何を考えているか——強弱の組み立てについて</h1>
+        <p class="post-meta">2024.04.30 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          スパイクを打つとき「とにかく強く打つ」だけでは通用しないことがあります。
+          試合の中でスパイクをどのように組み立てるか——強打とフェイントの使い分け、
+          コースの変化、タイミングの変化——この「強弱の組み立て」がスパイカーの本当の実力です。
+          ぼくが試合中に考えていることを、この動画で詳しく解説します。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/9AsSrW79MRw" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>強打とフェイントの比率は「強打7:フェイント3」程度が相手を崩しやすい</li>
+          <li>「前のラリーの記憶」を使って相手の守備位置の癖を読む</li>
+          <li>同じフォームで強さを変えることが相手の読みを外す最も効果的な方法</li>
+          <li>試合序盤は「相手の守備を観察する」ために意図的にコースを散らす</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          スパイクの強弱を組み立てるって、将棋みたいだなって感じています。
+          前の一手がどう影響するか、次の一手をどう打つか——
+          ぼくが意識しているのは「今の強打は次のフェイントのための布石」というイメージ。
+          そう考えると、ミスになった強打も「フェイントを活かすための投資」になる。
+          試合が面白くなりますよ。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          強弱の組み立てができるスパイカーは、相手にとって本当に読めない存在になります。
+          強打だけでなくフェイントを磨き、試合の中で計算してプレーする習慣をつけましょう。
+          一緒に頭を使ったスパイクを目指していきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

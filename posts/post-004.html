@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】良いセッターの条件とは？ — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】僕が考える良いセッターの条件とは？</h1>
+        <p class="post-meta">2024.04.04 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          セッターってどんな役割なのか、改めて考えたことはありますか？
+          ただトスを上げるだけじゃない。チームの攻撃を組み立てる、いわばゲームメーカーです。
+          この動画では、ぼくが長年ソフトバレーをプレーする中で感じてきた「良いセッターの条件」について、
+          自分なりの考えをまとめました。セッターをやっている方にも、攻撃陣にとっても参考になると思います。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/pRPBWV7H9Nk" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>良いセッターは「打者が打ちやすいトス」を最優先に考えている</li>
+          <li>コース読みとコミュニケーション能力がセッターの武器になる</li>
+          <li>ピンチのときこそ、セッターが落ち着いてチームを引っ張る</li>
+          <li>自分のトスの癖を知り、修正できる自己分析力が大切</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          セッターって、どうしても「自分がうまくトスを上げなきゃ」と焦ってしまうんですよね。
+          ぼくが意識しているのは、まず打者のことを見ること。
+          相手ブロックがどこにいるか、スパイカーが今どんな状態かを感じながらトスを選ぶ。
+          それができると、チーム全体が楽に動けるようになります。
+          一緒に上手くなりましょう。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          良いセッターとは、ただトスを正確に上げるだけじゃなく、
+          チームの流れを読んで攻撃をデザインできる選手のことだと思います。
+          技術はもちろん大切ですが、観察力とコミュニケーション力も同じくらい重要です。
+          この動画を参考に、ぜひセッターとしての視野を広げてみてください。
+          一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

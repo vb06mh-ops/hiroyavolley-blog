@@ -1,0 +1,309 @@
+/* ========================================
+   admin.css — 管理画面専用スタイル
+   ======================================== */
+
+:root {
+  --bg-dark:    #0D0D1A;
+  --bg-card:    #1C1830;
+  --purple:     #7B5EA7;
+  --gold:       #FDB927;
+  --gold-light: #FFE08A;
+  --text-main:  #F0EBF8;
+  --text-sub:   #C4B8D8;
+  --text-muted: #8A7AA0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ── Header ── */
+.admin-header {
+  background-color: var(--bg-card);
+  border-bottom: 2px solid var(--gold);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 22px;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+.admin-logo span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.admin-nav a {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-sub);
+  letter-spacing: 0.12em;
+  padding: 6px 14px;
+  border: 1px solid rgba(123,94,167,0.4);
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+.admin-nav a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ── Main layout ── */
+.admin-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+/* ── Page title ── */
+.admin-page-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  color: var(--text-main);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+.admin-page-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Form card ── */
+.admin-card {
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid var(--purple);
+}
+.admin-card-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(123,94,167,0.3);
+}
+
+/* ── Form fields ── */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--text-sub);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.form-group label .required {
+  color: var(--gold);
+  margin-left: 4px;
+}
+.form-group label .optional {
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-left: 6px;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(123,94,167,0.4);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 14px;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold);
+  background-color: rgba(253,185,39,0.04);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+select option {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+textarea { resize: vertical; min-height: 120px; line-height: 1.8; }
+
+/* ── Generate button ── */
+.btn-generate {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--gold);
+  color: var(--bg-dark);
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.btn-generate:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(253,185,39,0.3);
+}
+
+/* ── Output section ── */
+#output-section { display: none; }
+
+.output-card {
+  background-color: var(--bg-card);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid var(--gold);
+}
+.output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.output-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.btn-copy {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--gold);
+  color: var(--bg-dark);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-copy:hover { background-color: var(--gold-light); }
+.btn-copy.copied { background-color: #4CAF7D; color: #fff; }
+
+pre#output-html {
+  background-color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(123,94,167,0.3);
+  border-radius: 4px;
+  padding: 1.25rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-sub);
+  overflow: auto;
+  max-height: 400px;
+  line-height: 1.6;
+  white-space: pre;
+  word-break: break-all;
+}
+
+.card-output-area {
+  background-color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(123,94,167,0.3);
+  border-radius: 4px;
+  padding: 1.25rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-sub);
+  overflow: auto;
+  max-height: 300px;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+/* ── Step guide ── */
+.step-guide {
+  background-color: rgba(123,94,167,0.1);
+  border: 1px solid rgba(123,94,167,0.4);
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.step-guide-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.step-guide ol {
+  padding-left: 1.25rem;
+}
+.step-guide li {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 14px;
+  color: var(--text-sub);
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+.step-guide li strong {
+  color: var(--text-main);
+}
+.step-guide .note {
+  margin-top: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .admin-main { padding: 2rem 1.25rem 4rem; }
+  .admin-card { padding: 1.5rem 1.25rem; }
+  .admin-logo span { display: none; }
+  .btn-generate { font-size: 15px; }
+}

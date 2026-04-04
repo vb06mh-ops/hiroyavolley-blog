@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】良いトスの上げ方とは？ — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】僕が考える良いトスの上げ方について</h1>
+        <p class="post-meta">2024.04.05 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          「トスが安定しない」「スパイカーから文句を言われる」そんな悩みを抱えているセッターは多いと思います。
+          ぼく自身もずっとトスの精度と向き合ってきました。
+          この動画では、ぼくが実践している「良いトスの上げ方」を具体的に解説しています。
+          技術的なポイントはもちろん、考え方の部分も大切にしながらお伝えします。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/V2RaxOJPGoU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>トスの高さとスピードは、スパイカーのリズムに合わせることが最優先</li>
+          <li>手首のスナップよりも、体の重心移動でボールに力を伝える</li>
+          <li>トスの出す位置（ネットからの距離）を一定に保つ意識を持つ</li>
+          <li>練習では「意図を持ったトス」を繰り返すことで精度が上がる</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          やってみて感じたのは、トスって「感覚」だけじゃ安定しないということ。
+          ぼくが意識しているのは、体全体でボールを送り出すイメージです。
+          腕だけで上げようとすると、どうしてもばらつきが出てしまう。
+          体の軸をしっかり作って、毎回同じ動作を繰り返す。
+          これが「良いトス」への近道だと思っています。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          トスは地味に見えますが、チーム全体の攻撃力を左右する非常に重要な技術です。
+          一朝一夕で上手くなるものではありませんが、正しいポイントを意識して練習を積み重ねることで必ず変わります。
+          焦らず、一歩一歩一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

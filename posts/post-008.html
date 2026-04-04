@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】勝負所こそ余裕を演じる大切さ — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】勝負所こそ余裕を演じる大切さについて</h1>
+        <p class="post-meta">2024.04.08 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          デュースや競った場面、あなたはどんな表情でプレーしていますか？
+          実は、勝負所での「見た目の余裕」がチームと試合の流れを大きく変えることがあります。
+          この動画では、ぼくが試合の大事な場面で意識している「余裕を演じる」という考え方について解説しています。
+          メンタルゲームの視点から、試合に強くなるヒントをお伝えします。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/xmLh4KO66LM" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>表情・姿勢・態度が相手と味方に与える心理的な影響は大きい</li>
+          <li>「演じる余裕」は本物の余裕につながる——行動が感情を作る</li>
+          <li>チームキャプテンやエースほど、ピンチでの振る舞いを意識すべき</li>
+          <li>相手に「この人は焦っていない」と思わせることで優位に立てる</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          実際にやってみて感じたのは、「演じること」って最初は嘘くさく思えるんですよ。
+          でも、余裕のある振る舞いを続けていると、本当に気持ちが落ち着いてくるんです。
+          ぼくが意識しているのは、どんな場面でも表情を崩さないこと。
+          それだけで、相手へのプレッシャーになる。それが試合の流れを変えることもあります。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          勝負所でのメンタルは、技術と同じくらい重要です。
+          余裕を演じることで本当の余裕が生まれ、それがチーム全体の雰囲気を変えます。
+          次の試合から、大事な場面での自分の表情と態度を意識してみてください。
+          一緒に試合に強い選手を目指しましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

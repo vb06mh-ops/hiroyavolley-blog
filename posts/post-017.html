@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】試合で勝つために大切にしている言動 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】僕が試合で勝つために大切にしている言動</h1>
+        <p class="post-meta">2024.04.17 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          試合に勝つために必要なのは技術だけじゃありません。
+          コート内での言葉のかけ方、ミスをしたあとの反応、チームメイトへの態度——
+          こういった「言動」が試合の流れと雰囲気を大きく変えることがあります。
+          この動画では、ぼくが試合中に意識している言動の習慣について、
+          具体的なエピソードとともに語っています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/ymFx8qtzYgw" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>ミス後に「大丈夫」と声をかけることで、チーム全体の緊張をほぐす</li>
+          <li>ナイスプレーへの反応を大きくすることで、チームの士気が上がる</li>
+          <li>ネガティブな言葉や態度は伝染する——自分の言動がチームに影響することを意識</li>
+          <li>試合中の会話をポジティブかつ具体的にすることで動きが改善する</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          試合中の言葉って、思った以上にチームに影響するんですよ。
+          ぼくが意識しているのは「ありがとう」と「ナイス」を絶やさないこと。
+          たったそれだけで、チームの雰囲気が明るくなって、プレーが積極的になる。
+          技術的な声かけも大切ですが、まず感謝と承認を伝えることが基本です。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          言動はチームの文化を作ります。
+          自分の言葉と態度が仲間に与える影響を意識するだけで、
+          チーム全体のパフォーマンスが変わります。
+          試合に強いチームを作るために、まず自分の言動から変えていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

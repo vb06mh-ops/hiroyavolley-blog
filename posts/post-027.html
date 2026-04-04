@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】スパイクを打つとき何を見ているのか — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】視野の秘密——スパイクを打つとき僕が何を見ているのか</h1>
+        <p class="post-meta">2024.04.27 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          スパイクを打つとき、あなたはどこを見ていますか？
+          ボールだけ見ている？ブロックを見ている？コートを見ている？
+          実は、視線の使い方がスパイクの精度と決定率に大きく影響します。
+          この動画では、ぼくがスパイクを打つときに意識している「視野の使い方」の秘密をお伝えします。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/p7g6lgQo-T4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>助走中はブロッカーのポジションと相手コートを確認する「広い視野」を使う</li>
+          <li>ジャンプ後の打点直前でボールに視点を集中する「ピンポイントフォーカス」</li>
+          <li>「ブロックを見てから打つ」の具体的な実践方法——視線の切り替えタイミング</li>
+          <li>周辺視野を鍛えることでより多くの情報を瞬時に処理できるようになる</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          「スパイクはボールを見て打て」とよく言われますが、
+          ぼくが意識しているのはその前の段階——助走中にどれだけ情報を集めるかです。
+          コートの空きとブロックの位置を把握してから打ちに行く。
+          これができると「打ちながら考える」から「考えてから打つ」に変わります。
+          その差が決定率に直結するんです。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          視線の使い方はスパイクの質を大きく左右します。
+          練習の中で「何を見ているか」を意識するだけで、打てるコースの選択肢が広がります。
+          周辺視野を鍛えながら、賢いスパイカーを目指しましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

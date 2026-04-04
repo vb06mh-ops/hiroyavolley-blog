@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】忘れられない悔しかった敗戦について — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】忘れられない悔しかった敗戦について</h1>
+        <p class="post-meta">2024.04.13 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          バレーをやっていれば、忘れられない敗戦というものが必ずあります。
+          ぼくにも、今でも鮮明に覚えている、悔しくて眠れなかった試合があります。
+          この動画では、その敗戦についてお話しながら、
+          負けの経験がどのようにぼくを成長させてくれたか、正直な気持ちで語っています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/lR8aKj8uJxY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>悔しい敗戦は「次への燃料」になる——感情を成長のエネルギーに変える</li>
+          <li>負けた原因を感情的でなく冷静に分析することが次につながる</li>
+          <li>仲間と共有した悔しさは、チームの絆と強さになる</li>
+          <li>「なぜ負けたか」より「次に何をすべきか」に焦点を当てる思考法</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          あの敗戦の夜、ぼくはずっと試合を振り返っていました。
+          悔しくて、情けなくて、自分を責めて——でも翌日、気づいたんです。
+          この悔しさがあるからこそ、もっと強くなりたいと思える。
+          負けることも、バレーの一部だって。
+          その経験なしに今のぼくはありませんでした。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          負けは誰でも嫌いです。でも、負けを避けることはできません。
+          大切なのは、負けた後にどう向き合うか。
+          悔しさを力に変えて、また前を向いて練習を積み重ねる——
+          そのサイクルを続けることが、強い選手になる道だと信じています。
+          一緒に頑張っていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

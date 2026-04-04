@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】スパイクレシーブ・ディグで最も大切なこと — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】スパイクレシーブ・ディグで僕が最も大切だと思うこと</h1>
+        <p class="post-meta">2024.05.04 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          スパイクレシーブ（ディグ）は守備の要です。
+          強烈なスパイクをレシーブする瞬間、何を意識すればいいのか？
+          この動画では、ぼくがスパイクレシーブで最も大切だと思っていることを解説しています。
+          「とにかく反応する」だけでなく、もっと根本的な部分があります。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/xpHKNwtimj4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>ディグで最も大切なのは「構えの姿勢（低い重心）」——これが全ての基本</li>
+          <li>スパイカーのフォームからコースを「予測」する習慣が反応速度を上げる</li>
+          <li>腕を組んで「面」を作る——面の向きでボールのコントロール方向が変わる</li>
+          <li>「繋ぐ」意識——強打でもとにかくセッターに返せる位置へ向けることが最優先</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          ディグで一番大切なのは「姿勢」だとぼくは思っています。
+          低い姿勢が作れていると、左右どちらにも動けるし、強いボールにも負けない。
+          立った状態から腰を落とそうとしても間に合わない。
+          常に低い姿勢を維持している選手と、スパイクが来てから低くなる選手では
+          レシーブの精度が全然違います。まず「構え」から見直してみてください。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          スパイクレシーブの上達は「姿勢と予測」から始まります。
+          低い重心を常に保ち、スパイカーのコースを読む習慣をつけることで
+          守備の安定感が大きく向上します。
+          一緒に固いディグを身につけていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

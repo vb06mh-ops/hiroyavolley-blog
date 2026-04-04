@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】良いトスとは何か？ — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】僕が考える「良いトス」とは何か？</h1>
+        <p class="post-meta">2024.04.06 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          「良いトス」って、どんなトスのことを言うのでしょうか？
+          スパイカーが打ちやすいトス？ブロックされにくいトス？
+          この動画では、ぼく自身が考える「良いトス」の定義について深掘りしています。
+          トスの技術論だけでなく、考え方の根っこの部分から一緒に考えていきましょう。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/zJPq6FMPtC0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>「良いトス」の定義はスパイカーによって変わる——相手を見ることが大前提</li>
+          <li>打者が100%の力でスパイクを打てる場所にボールを届けることが理想</li>
+          <li>相手ブロックのポジションを読んでトスコースを変える判断力も必要</li>
+          <li>試合でのトスは「練習のトス」と違う——状況を読む能力を磨く</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          ぼくが思うのは、良いトスって「相手との対話」なんですよね。
+          スパイカーのフォームや走り込みのスピードを感じながら、
+          その人が一番打ちやすいタイミングと場所にボールを置く。
+          技術だけじゃなくて、観察力と想像力が試される。
+          それがセッターの面白さでもあるし、難しさでもあります。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          良いトスは「スパイカーのための」トスです。
+          セッターとして、まず打者のことを第一に考える視点を持つことが大切です。
+          自分のトスが相手にどう見えているか、試合でも練習でも常に意識してみてください。
+          一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

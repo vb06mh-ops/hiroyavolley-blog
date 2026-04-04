@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】得意技が対応された後の戦い方 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】本当は秘密にしたい得意技が対応された後の戦い方</h1>
+        <p class="post-meta">2024.04.23 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          自分の得意技が相手に対応されてきたとき、あなたはどうしますか？
+          試合が進む中で「読まれている」と感じる瞬間は必ずあります。
+          この動画では、ぼくが秘密にしていた得意技が対応された後、どのように戦い方を変えたかについて語っています。
+          応用と適応の能力が、上級者との差を生む場面です。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/I8lghR_22t0" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>得意技が対応されたとき、それを「捨てる」のではなく「より少なく使う」ことで価値が戻る</li>
+          <li>対応された技の逆を突く——「見せ球」として使って別のコースを空ける</li>
+          <li>試合中に戦術を変える柔軟性は、事前の「引き出し作り」から生まれる</li>
+          <li>相手の分析と自分の分析を同時に行うゲームリーディング能力を鍛える</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          得意技が通じなくなったとき、正直パニックになったことがあります。
+          でも、あるとき気づいたんです。
+          対応されたということは、相手がそこを意識しているということ。
+          つまり、そっちが空いていない分、他のコースが空いている。
+          読まれることを逆手に取る——これができると試合が面白くなります。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          得意技は大事ですが、それだけに頼ると読まれたときに詰まってしまいます。
+          対応された後の戦い方を持っていることが、本物の強さです。
+          引き出しを増やして、試合中に適応できる選手を目指しましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

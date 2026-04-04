@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】サーブカット・キャッチで大切にしていること — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】サーブカット・キャッチで僕が大切にしていること</h1>
+        <p class="post-meta">2024.05.05 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          サーブカット（レセプション）は、チームの攻撃の起点となる最も重要な守備のひとつです。
+          ここが乱れると、セッターの仕事が難しくなり、攻撃の質が落ちます。
+          この動画では、ぼくがサーブカットで大切にしていることを、
+          足の動きからボールの追い方・体の使い方まで詳しく解説しています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/O0y0Ag6O8xA" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>サーブカットは「ボールの落下点に早く入る」フットワークが全ての基礎</li>
+          <li>体の正面でボールをとらえる——体の横で取ると方向がぶれやすい</li>
+          <li>セッターへの返球は「高さと距離の安定」を最優先に——強さより精度を求める</li>
+          <li>サーバーのフォームからボールのコースを予測する観察習慣を持つ</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          サーブカットで一番大切にしているのは、「早く落下点に入ること」です。
+          余裕を持って正面でボールをとらえると、安定したレセプションができる。
+          逆に、体の横で取ろうとすると、どうしても方向が安定しない。
+          「早く入って待つ」この意識だけで、サーブカットの精度が劇的に変わります。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          サーブカットはチームの攻撃を支える縁の下の力持ちです。
+          地味に見えますが、ここの安定がチームの勝率を大きく左右します。
+          早い動き出しと体の正面での処理を意識して、安定したレセプションを目指しましょう。
+          一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

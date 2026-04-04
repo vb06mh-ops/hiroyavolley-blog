@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】上手くなる人の特徴「常に意識できる人」 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】上手くなる人の特徴①「常に意識できる人」</h1>
+        <p class="post-meta">2024.04.25 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          上手くなる人と、なかなか上手くならない人——この違いはどこにあるのでしょうか？
+          ぼくが多くの選手を見てきた中で感じる特徴のひとつが「常に意識できること」です。
+          この動画では、上手くなる選手が持っている「意識の質」について解説しています。
+          才能じゃなくて、習慣の違いです。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/bQiS5w3cWq8" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>「常に意識できる人」は練習中だけでなく試合でも改善しようとしている</li>
+          <li>漫然と動くのではなく「今何を練習しているか」を自分で言葉にできる</li>
+          <li>ミスをした後に「なぜミスしたか」を即座に考える習慣を持っている</li>
+          <li>コーチや仲間からのアドバイスを素直に受け入れて試す柔軟性がある</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          上手くなる人って、練習の密度が違うんですよ。
+          同じ時間、同じ本数を練習していても、「何を意識しながらやっているか」が違う。
+          ぼくが意識しているのは、毎回の練習に「今日のテーマ」を持つこと。
+          漠然と打つんじゃなくて、今日はこれを改善するという目的を持って臨む。
+          それだけで、練習の質が全然変わります。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          上手くなるスピードは、「意識の質」で決まります。
+          今日の練習から、「今何を改善しているか」を言葉にしながら取り組んでみてください。
+          その積み重ねが、必ず成長につながります。一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>記事管理画面 — 町川大弥ブログ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="admin-header">
+  <div class="admin-logo">
+    HIROYA BLOG
+    <span>ADMIN PANEL</span>
+  </div>
+  <nav class="admin-nav">
+    <a href="index.html" target="_blank">サイトを見る ↗</a>
+  </nav>
+</header>
+
+<main class="admin-main">
+
+  <h1 class="admin-page-title">記事を作る</h1>
+  <p class="admin-page-sub">ARTICLE GENERATOR — フォームを埋めてHTMLを自動生成</p>
+
+  <!-- ===== FORM CARD ===== -->
+  <div class="admin-card">
+    <p class="admin-card-title">記事情報を入力</p>
+
+    <div class="form-group">
+      <label for="post-title">記事タイトル <span class="required">*必須</span></label>
+      <input type="text" id="post-title" placeholder="例：スパイクの打点を上げる方法">
+    </div>
+
+    <div class="form-group">
+      <label for="post-category">カテゴリー <span class="required">*必須</span></label>
+      <select id="post-category">
+        <option value="バレーボール上達理論">バレーボール上達理論</option>
+        <option value="ソフトバレーボール">ソフトバレーボール</option>
+        <option value="シューズ・ギアレビュー">シューズ・ギアレビュー</option>
+        <option value="Mamba Mentality">Mamba Mentality</option>
+        <option value="今日が人生で一番若い日">今日が人生で一番若い日</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="post-date">投稿日 <span class="required">*必須</span></label>
+      <input type="date" id="post-date">
+    </div>
+
+    <div class="form-group">
+      <label for="post-youtube">YouTube動画URL <span class="optional">任意</span></label>
+      <input type="url" id="post-youtube" placeholder="例：https://www.youtube.com/watch?v=XXXXXX">
+    </div>
+
+    <div class="form-group">
+      <label for="post-points">動画のポイント <span class="optional">任意・1行1ポイント</span></label>
+      <textarea id="post-points" rows="5" placeholder="ポイントを1行ずつ入力してください
+例：
+ジャンプのタイミングは落下点に入ること
+腕の振りは肩から先行させる
+毎日できる練習法"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="post-body">本文・補足コメント <span class="required">*必須</span></label>
+      <textarea id="post-body" rows="8" placeholder="実際にやってみて感じたことや、特に意識してほしいポイントを書いてください。"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="post-summary">まとめメッセージ <span class="optional">任意</span></label>
+      <textarea id="post-summary" rows="4" placeholder="記事の締めの一言。省略すると定型文が入ります。"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="post-filename">ファイル名（保存するときの名前）</label>
+      <input type="text" id="post-filename" placeholder="例：post-004.html">
+    </div>
+
+    <button class="btn-generate" id="generate-btn">記事HTMLを生成する</button>
+  </div>
+
+  <!-- ===== OUTPUT SECTION ===== -->
+  <div id="output-section">
+
+    <!-- Step guide -->
+    <div class="step-guide">
+      <p class="step-guide-title">次のステップ — GitHubにアップロードする方法</p>
+      <ol>
+        <li>下の「<strong>全部コピーする</strong>」ボタンを押す</li>
+        <li>パソコンで「<strong>メモ帳</strong>」（Windows）または「<strong>テキストエディット</strong>」（Mac）を開く</li>
+        <li>貼り付けて、ファイル名「<strong id="guide-filename">post-004.html</strong>」で保存する</li>
+        <li>GitHubのリポジトリページを開く → <strong>postsフォルダ</strong>をクリック → 「Add file」→「Upload files」</li>
+        <li>保存したHTMLファイルをアップロード → 「Commit changes」をクリック → <strong>完了！</strong></li>
+      </ol>
+      <p class="note">※ ファイル名は「post-004.html」「post-005.html」と数字を1つずつ増やしてください</p>
+    </div>
+
+    <!-- Generated article HTML -->
+    <div class="output-card">
+      <div class="output-header">
+        <p class="output-title">生成された記事HTML（posts/ フォルダに保存）</p>
+        <button class="btn-copy" id="copy-post-btn">全部コピーする</button>
+      </div>
+      <pre id="output-html"></pre>
+    </div>
+
+    <!-- Blog card HTML -->
+    <div class="output-card">
+      <div class="output-header">
+        <p class="output-title">blog.html に追加するカードコード</p>
+        <button class="btn-copy" id="copy-card-btn">コピーする</button>
+      </div>
+      <p style="font-family:'Noto Serif JP',serif;font-size:13px;color:var(--text-muted);margin-bottom:1rem;">
+        blog.html を開いて、<code style="background:rgba(255,255,255,0.07);padding:2px 6px;border-radius:3px;font-family:'DM Mono',monospace;font-size:12px;">&lt;div class="blog-grid"&gt;</code> の中に貼り付けてください。
+      </p>
+      <pre id="output-card-html" class="card-output-area"></pre>
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+  // ── 今日の日付をデフォルトにセット ──
+  (function () {
+    const today = new Date();
+    const yyyy  = today.getFullYear();
+    const mm    = String(today.getMonth() + 1).padStart(2, '0');
+    const dd    = String(today.getDate()).padStart(2, '0');
+    document.getElementById('post-date').value = `${yyyy}-${mm}-${dd}`;
+  })();
+
+  // ── YouTube URL → embed ID 変換 ──
+  function extractYouTubeId(url) {
+    if (!url) return null;
+    const regex = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+  }
+
+  // ── 日付フォーマット ──
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    const [yyyy, mm, dd] = dateStr.split('-');
+    return `${yyyy}年${parseInt(mm)}月${parseInt(dd)}日`;
+  }
+
+  function formatDateDot(dateStr) {
+    if (!dateStr) return '';
+    const [yyyy, mm, dd] = dateStr.split('-');
+    return `${yyyy}.${mm}.${dd}`;
+  }
+
+  // ── ポイントテキスト → <ul> HTML ──
+  function convertBullets(text) {
+    if (!text.trim()) return '';
+    const lines = text.trim().split('\n').filter(l => l.trim());
+    const items = lines.map(l => `          <li>${escapeHtml(l.trim())}</li>`).join('\n');
+    return `        <ul class="post-points">\n${items}\n        </ul>`;
+  }
+
+  // ── HTML エスケープ ──
+  function escapeHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── 本文を段落に分割 ──
+  function bodyToParagraphs(text) {
+    if (!text.trim()) return '';
+    return text.trim().split(/\n\n+/).map(para => {
+      const lines = para.trim().split('\n').map(l => escapeHtml(l)).join('<br>');
+      return `        <p>${lines}</p>`;
+    }).join('\n');
+  }
+
+  // ── 記事 HTML を生成 ──
+  function generatePostHTML() {
+    const title    = document.getElementById('post-title').value.trim();
+    const category = document.getElementById('post-category').value;
+    const dateRaw  = document.getElementById('post-date').value;
+    const ytUrl    = document.getElementById('post-youtube').value.trim();
+    const points   = document.getElementById('post-points').value;
+    const body     = document.getElementById('post-body').value;
+    const summary  = document.getElementById('post-summary').value.trim();
+    const filename = document.getElementById('post-filename').value.trim() || 'post-new.html';
+
+    if (!title) { alert('記事タイトルを入力してください。'); return null; }
+    if (!body.trim()) { alert('本文・補足コメントを入力してください。'); return null; }
+
+    const ytId       = extractYouTubeId(ytUrl);
+    const dateJP     = formatDate(dateRaw);
+    const dateDot    = formatDateDot(dateRaw);
+    const titleEsc   = escapeHtml(title);
+    const catEsc     = escapeHtml(category);
+
+    // YouTube ブロック
+    const videoBlock = ytId
+      ? `        <div class="post-video-wrap">\n          <iframe width="100%" height="400" src="https://www.youtube.com/embed/${ytId}" frameborder="0" allowfullscreen></iframe>\n        </div>`
+      : `        <!-- YouTube URLを入力すると動画が自動埋め込まれます -->\n        <div class="post-video-wrap">\n          <div class="post-video-placeholder">▶ YouTube動画はこちら</div>\n        </div>`;
+
+    // ポイントブロック
+    const pointsBlock = points.trim()
+      ? `\n        <h2>この動画のポイント</h2>\n\n${convertBullets(points)}\n`
+      : '';
+
+    // 本文ブロック
+    const bodyBlock = bodyToParagraphs(body);
+
+    // まとめブロック
+    const defaultSummary = `一緒に上手くなっていきましょう。\nこのブログでは毎日バレーボール・ソフトバレーの理論を発信しています。\n同じように頑張っている仲間と一緒に成長できたら嬉しいです。`;
+    const summaryText    = summary || defaultSummary;
+    const summaryBlock   = bodyToParagraphs(summaryText);
+
+    const html = `<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${titleEsc} — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+
+      <header class="post-header">
+        <span class="badge">${catEsc}</span>
+        <h1 class="post-title">${titleEsc}</h1>
+        <p class="post-meta">${dateJP} / 町川 大弥</p>
+      </header>
+
+      <div class="post-content">
+
+${bodyBlock}
+
+${videoBlock}
+${pointsBlock}
+        <h2>まとめ</h2>
+
+${summaryBlock}
+
+      </div>
+
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+      mobileNav.classList.remove('open');
+    }
+  });
+<\/script>
+</body>
+</html>`;
+
+    // blog.html 用カード HTML
+    const slugName     = filename.replace('.html', '');
+    const excerptSrc   = body.replace(/\n/g, '').slice(0, 60);
+    const excerptEsc   = escapeHtml(excerptSrc) + (excerptSrc.length >= 60 ? '...' : '');
+    const cardHtml = `<article class="post-card" data-category="${catEsc}">
+  <span class="badge">${catEsc}</span>
+  <p class="post-card-date">${dateDot}</p>
+  <h2 class="post-card-title">${titleEsc}</h2>
+  <p class="post-card-excerpt">${excerptEsc}</p>
+  <a href="posts/${filename}" class="read-more">続きを読む →</a>
+</article>`;
+
+    return { html, cardHtml, filename };
+  }
+
+  // ── 生成ボタン ──
+  document.getElementById('generate-btn').addEventListener('click', () => {
+    const result = generatePostHTML();
+    if (!result) return;
+
+    document.getElementById('output-html').textContent      = result.html;
+    document.getElementById('output-card-html').textContent = result.cardHtml;
+    document.getElementById('guide-filename').textContent   = result.filename || 'post-new.html';
+    document.getElementById('output-section').style.display = 'block';
+
+    // スクロール
+    document.getElementById('output-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ── コピーボタン共通処理 ──
+  function setupCopyBtn(btnId, sourceId) {
+    const btn = document.getElementById(btnId);
+    btn.addEventListener('click', () => {
+      const text = document.getElementById(sourceId).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'コピーしました！';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = btnId === 'copy-post-btn' ? '全部コピーする' : 'コピーする';
+          btn.classList.remove('copied');
+        }, 2000);
+      }).catch(() => {
+        // フォールバック（古いブラウザ）
+        const el = document.getElementById(sourceId);
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        btn.textContent = 'コピーしました！';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = btnId === 'copy-post-btn' ? '全部コピーする' : 'コピーする';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  }
+
+  setupCopyBtn('copy-post-btn', 'output-html');
+  setupCopyBtn('copy-card-btn', 'output-card-html');
+</script>
+</body>
+</html>

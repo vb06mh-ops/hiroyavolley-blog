@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】トスが短く割れたときの対処法 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】トスが短く・割れたときの効果的な対処法</h1>
+        <p class="post-meta">2024.04.16 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          トスが短くてネットに近すぎる——そんな状況でスパイクを打つのは、ブロックされるリスクが非常に高くなります。
+          短いトスはソフトバレーの試合でもよく起きる現象。
+          この動画では、トスが短く割れたときにどう対処するかについて、
+          ぼくの考え方と実際のプレーを交えながら解説しています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/oIdAnlL_PKc" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>短いトスはブロックのリスクが高いため、強打よりもフェイント・プッシュが有効</li>
+          <li>ブロッカーの手の上を超えるロビングで時間を作る選択肢も持っておく</li>
+          <li>助走を調整してネットに寄りすぎず、打点を下げすぎないポジション取り</li>
+          <li>「このトスでは何ができるか」を瞬時に判断するトレーニングが効果的</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          短いトスで無理に打ちにいってブロックされる——若い頃はそれで何度も失点してきました。
+          ぼくが変えたのは、「短いトスは攻撃じゃなく守備」という意識です。
+          繋いで次のチャンスを作ることが最善のプレーになることも多い。
+          その判断ができると、試合の中での余裕が全然変わりますよ。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          短いトスへの対処は、頭の使い方と冷静な判断が鍵です。
+          難しい状況でも最善の選択ができる選手になれるよう、
+          練習の中からさまざまな状況への対応を磨いていきましょう。
+          一緒に上手くなっていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

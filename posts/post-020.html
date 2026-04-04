@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】接戦を勝ち切るために大切なこと — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】僕が接戦を勝ち切るために大切にしていること</h1>
+        <p class="post-meta">2024.04.20 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          接戦——それは実力が拮抗した相手との戦い。
+          「あと1点」が遠く感じる瞬間が試合の中にはあります。
+          この動画では、ぼくが接戦を勝ち切るために普段から大切にしている考え方と行動について語っています。
+          技術論だけでなく、チームとしての在り方も含めてお伝えします。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/SBs6K_qQ_YE" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>接戦を勝ち切るチームは「声」と「全員が同じ方向を向いている」共通点がある</li>
+          <li>デュースや大事なポイント前に「リセット」のルーティンを持っておく</li>
+          <li>攻めの姿勢を崩さない——守りに入ったチームが接戦を落とすパターンが多い</li>
+          <li>「ここで決めれば変わる」という一本への集中力が接戦の分岐点になる</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          接戦を勝ち切るとき、ぼくが感じるのはチームの空気感です。
+          諦めない、守りに入らない、声が出ている——
+          そういうチームは最後の最後でひっくり返すことができる。
+          ぼくが意識しているのは、その「雰囲気」を自分が作り出すことです。
+          一人のプレーがチームを変えることがあると信じています。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          接戦に強いチームは、技術だけでなくメンタルと雰囲気が整っています。
+          自分がその雰囲気作りに貢献できる選手になることを目指してみてください。
+          一緒に接戦を勝ち切る力を身につけていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

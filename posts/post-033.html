@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】ジャンプサーブを成功させるために最も大切なこと — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】ジャンプサーブを成功させるために最も大切なこと</h1>
+        <p class="post-meta">2024.05.03 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          ジャンプサーブは成功すれば絶大な威力を持つ武器ですが、
+          入らなければ相手にサービスポイントを与えてしまう諸刃の剣でもあります。
+          ぼくがジャンプサーブを安定させるために「最も大切だ」と感じていることを、
+          この動画で正直に語っています。技術だけじゃないところがポイントです。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/fAYeOP4au40" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>ジャンプサーブで最も重要なのはトス——安定したトスが全ての基礎</li>
+          <li>助走からジャンプ・スイングまでの「一連の動作の一貫性」を体に染み込ませる</li>
+          <li>「入れることを最優先」する日と「コースを狙う」日で練習を分ける</li>
+          <li>試合での使いどころ——大事な場面での確率計算を持っておく</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          ジャンプサーブが入らないとき、ぼくが最初に見直すのはトスです。
+          トスが毎回違う位置に上がっていると、どれだけ体の動きを揃えても安定しない。
+          「トスの精度がジャンプサーブの精度」だと感じています。
+          まずトスだけを何十回も練習する——これが遠回りに見えて、一番の近道です。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          ジャンプサーブはトスの安定が9割です。
+          技術的なフォームも大切ですが、まずトスを一定にすることから始めてみてください。
+          それだけで、ジャンプサーブの成功率が劇的に変わります。
+          一緒に強力なサーブを身につけていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>

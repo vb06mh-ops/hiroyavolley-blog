@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【ソフトバレー】平行スパイクに対するブロックの仕方 — 町川大弥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html" class="site-logo">HIROYA</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../about.html">ABOUT</a></li>
+      <li><a href="../blog.html" class="active">BLOG</a></li>
+      <li><a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="../index.html">HOME</a>
+  <a href="../about.html">ABOUT</a>
+  <a href="../blog.html">BLOG</a>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YOUTUBE</a>
+</nav>
+
+<main>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
+      <header class="post-header">
+        <span class="badge">ソフトバレーボール</span>
+        <h1 class="post-title">【ソフトバレー】平行スパイクに対するブロックの仕方</h1>
+        <p class="post-meta">2024.04.29 / 町川 大弥</p>
+      </header>
+      <div class="post-content">
+        <p>
+          平行（パラレル）スパイクはネットと平行に打つ、速くてコート奥まで伸びる難しい攻撃です。
+          対応するブロックのタイミングと位置取りを間違えると、全くシャットできません。
+          この動画では、ぼくが平行スパイクに対してどのようにブロックしているかを、
+          ポジショニングから手の向きまで具体的に解説しています。
+        </p>
+
+        <div class="post-video-wrap">
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/sz1t84DO7xs" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h2>この動画のポイント</h2>
+        <ul class="post-points">
+          <li>平行スパイクはトスが高く幅があるため、ブロッカーのポジションがより重要</li>
+          <li>アウトサイドブロッカーはコースを限定して後衛ディグに任せる判断が必要</li>
+          <li>平行打ちの場合、手を「内側に絞る」ことでライン際を消す効果がある</li>
+          <li>相手セッターの動きとスパイカーの助走方向でコース予測を早める</li>
+        </ul>
+
+        <h2>やってみて気づいたこと</h2>
+        <blockquote class="post-quote">
+          平行スパイクのブロックって難しいのは、スパイカーが助走で騙してくることが多いからです。
+          ぼくが意識しているのは、助走よりもトスの位置でコースを判断すること。
+          トスがどこに上がったかで「平行が来る可能性が高い」と感じたら、
+          早めにポジションを取り直す。この先読みがブロックの精度を上げます。
+        </blockquote>
+
+        <h2>まとめ</h2>
+        <p>
+          平行スパイクへのブロックは、位置取りとタイミングの精度が全てです。
+          シャットアウトを狙うより「コースを制限する」意識で取り組むと、
+          後衛との連携がうまくいきます。
+          チームとしての守備力を高めていきましょう！
+        </p>
+      </div>
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2024 Hiroya Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
+  });
+</script>
+</body>
+</html>
