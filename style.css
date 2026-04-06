@@ -1190,11 +1190,11 @@ img { max-width: 100%; height: auto; }
    ============================================================ */
 .story-heading {
   font-family: 'Noto Serif JP', serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--purple);
+  color: #2a1a5e;
   margin: 2.5rem 0 1rem;
   padding-left: 0.8rem;
-  border-left: 3px solid var(--gold);
+  border-left: 4px solid var(--gold);
   letter-spacing: 0.03em;
 }
