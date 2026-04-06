@@ -255,6 +255,42 @@ img { max-width: 100%; height: auto; }
   line-height: 2;
   margin-bottom: 1rem;
 }
+/* SEO用タイトル（視覚的に非表示・検索エンジン向け） */
+.hero-site-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+/* サブタイトル帯 */
+.hero-subtitle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.hero-subtitle-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0.5;
+}
+.hero-subtitle {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  padding: 6px 16px;
+  border: 1px solid rgba(253,185,39,0.35);
+  border-radius: 2px;
+  background: rgba(253,185,39,0.06);
+}
+
 .hero-meta {
   font-family: 'DM Mono', monospace;
   font-size: 12px;
@@ -607,6 +643,16 @@ img { max-width: 100%; height: auto; }
   .hero-title-en { font-size: 40px; }
   .hero-catch    { font-size: 16px; }
   .hero-buttons  { flex-direction: column; }
+
+  .hero-subtitle-wrap { gap: 0.5rem; }
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    text-align: center;
+    padding: 5px 12px;
+  }
+  .hero-subtitle-line { display: none; }
 
   .mission-grid,
   .philosophy-grid { grid-template-columns: 1fr; }
