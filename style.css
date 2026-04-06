@@ -1183,3 +1183,18 @@ img { max-width: 100%; height: auto; }
   .share-btn-group { justify-content: center; }
   .related-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ============================================================
+   About - MY STORY 見出し
+   ============================================================ */
+.story-heading {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--purple);
+  margin: 2.5rem 0 1rem;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--gold);
+  letter-spacing: 0.03em;
+}
