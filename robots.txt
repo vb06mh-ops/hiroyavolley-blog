@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vb06mh-ops.github.io/hiroyavolley-blog/sitemap.xml
