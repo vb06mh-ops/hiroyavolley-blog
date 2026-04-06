@@ -255,27 +255,34 @@ img { max-width: 100%; height: auto; }
   line-height: 2;
   margin-bottom: 1rem;
 }
-/* ── Hero 2カラム レイアウト ── */
+/* ── Hero セクション ── */
 .hero-section {
   background-color: var(--bg-dark);
   padding: 6rem 2rem 5rem;
   overflow: hidden;
 }
-.hero-layout {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 4rem;
+
+/* ── 上段：タイトル文字 左 ＋ 丸アイコン 右 ── */
+.hero-top-row {
+  display: flex;
   align-items: center;
-  min-height: 580px;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
-.hero-text { display: flex; flex-direction: column; }
+.hero-top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
 
 /* ブログタイトル（視覚表示） */
 .hero-blog-title {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-bottom: 1.25rem;
+  gap: 3px;
   padding-left: 0.75rem;
   border-left: 3px solid var(--gold);
 }
@@ -295,120 +302,86 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.12em;
 }
 
-/* ── 写真カラム ── */
-.hero-photo-col {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.hero-photo-frame {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 3 / 4;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.hero-photo-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  filter: contrast(1.05) saturate(0.95);
-  transition: transform 0.6s ease;
-}
-.hero-photo-frame:hover .hero-photo-img {
-  transform: scale(1.03);
-}
-
-/* プレースホルダー（写真未設定時） */
-.hero-photo-placeholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(123,94,167,0.2) 100%);
+/* ── 丸型アイコン（Instagram / YouTube風） ── */
+.hero-avatar-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* 二重リングのグラデーション枠 */
+.hero-avatar-ring {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  /* Instagram風グラデーションリング */
+  background: linear-gradient(
+    135deg,
+    var(--gold) 0%,
+    #ffcf40 30%,
+    var(--purple) 70%,
+    #9B6FD4 100%
+  );
+  box-shadow:
+    0 0 0 2px var(--bg-dark),   /* 内側の隙間 */
+    0 4px 24px rgba(253,185,39,0.35),
+    0 0 0 4px rgba(253,185,39,0.12);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.hero-avatar-ring:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 0 2px var(--bg-dark),
+    0 6px 32px rgba(253,185,39,0.5),
+    0 0 0 4px rgba(253,185,39,0.25);
+}
+
+/* 内側の白いリング → 背景色で隠す */
+.hero-avatar-ring::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  z-index: 0;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 3px;  /* リングとの隙間 */
+}
+
+.hero-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  border: 2px dashed rgba(253,185,39,0.3);
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
 }
-.hero-photo-placeholder span { font-size: 4rem; }
-.hero-photo-placeholder p {
+
+/* アイコン下のラベル */
+.hero-avatar-label {
   font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
-  color: var(--text-muted);
-  letter-spacing: 0.2em;
-}
-
-/* 金の装飾枠（写真の右上にずれた外枠） */
-.hero-photo-border {
-  position: absolute;
-  inset: 0;
-  border: 2px solid var(--gold);
-  border-radius: 8px;
-  pointer-events: none;
-  opacity: 0.6;
-  box-shadow: 0 0 30px rgba(253,185,39,0.15);
-}
-
-/* 下部グラデーション（写真をフェードアウト） */
-.hero-photo-gradient {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 40%;
-  background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
-  pointer-events: none;
-}
-
-/* バッジラベル（写真下部に重ねる） */
-.hero-photo-badge {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(13,13,26,0.85);
-  border: 1px solid var(--gold);
-  border-radius: 2px;
-  padding: 5px 16px;
-  white-space: nowrap;
-}
-.hero-photo-badge-text {
-  font-family: 'DM Mono', monospace;
-  font-size: 9px;
-  font-weight: 500;
+  font-size: 13px;
   letter-spacing: 0.2em;
   color: var(--gold);
-  text-transform: uppercase;
-}
-
-/* ── 装飾：写真の右上に金の小さな正方形 ── */
-.hero-photo-frame::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 60px;
-  height: 60px;
-  border-top: 3px solid var(--gold);
-  border-right: 3px solid var(--gold);
-  border-radius: 0 4px 0 0;
-  z-index: 2;
-  pointer-events: none;
-}
-.hero-photo-frame::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: -8px;
-  width: 60px;
-  height: 60px;
-  border-bottom: 3px solid var(--gold);
-  border-left: 3px solid var(--gold);
-  border-radius: 0 0 0 4px;
-  z-index: 2;
-  pointer-events: none;
 }
 
 /* サブタイトル帯 */
@@ -786,25 +759,20 @@ img { max-width: 100%; height: auto; }
   .site-nav    { display: none; }
   .hamburger   { display: flex; }
 
-  /* Hero レイアウト：スマホは縦積み・写真が先 */
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    min-height: auto;
+  /* Hero スマホ対応 */
+  .hero-top-row {
+    gap: 1rem;
   }
-  .hero-photo-col { order: -1; }  /* 写真を上に */
-  .hero-photo-frame {
-    max-width: 280px;
-    margin: 0 auto;
+  .hero-avatar-ring {
+    width: 100px;
+    height: 100px;
   }
-  .hero-photo-frame::before,
-  .hero-photo-frame::after { display: none; }
+  .hero-blog-title-jp { font-size: 11px; }
+  .hero-blog-title-en { font-size: 9px; }
 
   .hero-title-en { font-size: 40px; }
   .hero-catch    { font-size: 16px; }
   .hero-buttons  { flex-direction: column; }
-
-  .hero-blog-title-jp { font-size: 12px; }
 
   .hero-subtitle-wrap { gap: 0.5rem; }
   .hero-subtitle {
