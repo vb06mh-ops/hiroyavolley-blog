@@ -255,14 +255,160 @@ img { max-width: 100%; height: auto; }
   line-height: 2;
   margin-bottom: 1rem;
 }
-/* SEO用タイトル（視覚的に非表示・検索エンジン向け） */
-.hero-site-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+/* ── Hero 2カラム レイアウト ── */
+.hero-section {
+  background-color: var(--bg-dark);
+  padding: 6rem 2rem 5rem;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+}
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  align-items: center;
+  min-height: 580px;
+}
+.hero-text { display: flex; flex-direction: column; }
+
+/* ブログタイトル（視覚表示） */
+.hero-blog-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--gold);
+}
+.hero-blog-title-jp {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+.hero-blog-title-en {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+}
+
+/* ── 写真カラム ── */
+.hero-photo-col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 3 / 4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: contrast(1.05) saturate(0.95);
+  transition: transform 0.6s ease;
+}
+.hero-photo-frame:hover .hero-photo-img {
+  transform: scale(1.03);
+}
+
+/* プレースホルダー（写真未設定時） */
+.hero-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(123,94,167,0.2) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 2px dashed rgba(253,185,39,0.3);
+}
+.hero-photo-placeholder span { font-size: 4rem; }
+.hero-photo-placeholder p {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: var(--text-muted);
+  letter-spacing: 0.2em;
+}
+
+/* 金の装飾枠（写真の右上にずれた外枠） */
+.hero-photo-border {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0.6;
+  box-shadow: 0 0 30px rgba(253,185,39,0.15);
+}
+
+/* 下部グラデーション（写真をフェードアウト） */
+.hero-photo-gradient {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(to top, var(--bg-dark) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* バッジラベル（写真下部に重ねる） */
+.hero-photo-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13,13,26,0.85);
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  padding: 5px 16px;
   white-space: nowrap;
+}
+.hero-photo-badge-text {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+/* ── 装飾：写真の右上に金の小さな正方形 ── */
+.hero-photo-frame::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 60px;
+  height: 60px;
+  border-top: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
+  border-radius: 0 4px 0 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-photo-frame::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  width: 60px;
+  height: 60px;
+  border-bottom: 3px solid var(--gold);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 0 0 4px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* サブタイトル帯 */
@@ -640,9 +786,25 @@ img { max-width: 100%; height: auto; }
   .site-nav    { display: none; }
   .hamburger   { display: flex; }
 
+  /* Hero レイアウト：スマホは縦積み・写真が先 */
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    min-height: auto;
+  }
+  .hero-photo-col { order: -1; }  /* 写真を上に */
+  .hero-photo-frame {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .hero-photo-frame::before,
+  .hero-photo-frame::after { display: none; }
+
   .hero-title-en { font-size: 40px; }
   .hero-catch    { font-size: 16px; }
   .hero-buttons  { flex-direction: column; }
+
+  .hero-blog-title-jp { font-size: 12px; }
 
   .hero-subtitle-wrap { gap: 0.5rem; }
   .hero-subtitle {
