@@ -7,7 +7,8 @@
   <meta name="description" content="バレーボール・ソフトバレーの取組・理論・記録。町川大弥の公式ブログ記事一覧。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+
   <!-- SEO -->
   <meta name="keywords" content="バレーボール,ソフトバレー,香川県,町川大弥,技術解説,上達理論,ブロック,スパイク,トス">
   <meta name="author" content="町川大弥">
@@ -19,22 +20,20 @@
   <meta property="og:url" content="https://vb06mh-ops.github.io/hiroyavolley-blog/blog.html">
   <meta property="og:image" content="https://vb06mh-ops.github.io/hiroyavolley-blog/images/hiroya-hero.jpg">
   <meta property="og:locale" content="ja_JP">
+
   <link rel="stylesheet" href="style.css">
+
   <script>
     function sidebarSearch() {
       const q = document.getElementById('sidebar-search-input').value;
       if (q.trim()) window.location.href = 'search.html?q=' + encodeURIComponent(q);
     }
-    document.addEventListener('keydown', function(e) {
-      const inp = document.getElementById('sidebar-search-input');
-      if (inp && e.target === inp && e.key === 'Enter') sidebarSearch();
-    });
   </script>
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header class="site-header">
+<header class="site-header" id="site-header">
   <a href="index.html" class="site-logo">HIROYA</a>
   <nav>
     <ul class="site-nav">
@@ -48,6 +47,7 @@
     <span></span><span></span><span></span>
   </button>
 </header>
+
 <nav class="mobile-nav" id="mobile-nav">
   <a href="index.html">HOME</a>
   <a href="about.html">ABOUT</a>
@@ -56,13 +56,30 @@
 </nav>
 
 <main>
+  <!-- ===== TICKER STRIP ===== -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span>LOGIC</span><span class="t-gold">✦</span>
+      <span>PASSION</span><span class="t-gold">✦</span>
+      <span>VOLLEYBALL</span><span class="t-gold">✦</span>
+      <span>日本一への道</span><span class="t-gold">✦</span>
+      <span>MAMBA MENTALITY</span><span class="t-gold">✦</span>
+      <span>HIROYA</span><span class="t-gold">✦</span>
+      <span>LOGIC</span><span class="t-gold">✦</span>
+      <span>PASSION</span><span class="t-gold">✦</span>
+      <span>VOLLEYBALL</span><span class="t-gold">✦</span>
+      <span>日本一への道</span><span class="t-gold">✦</span>
+      <span>MAMBA MENTALITY</span><span class="t-gold">✦</span>
+      <span>HIROYA</span><span class="t-gold">✦</span>
+    </div>
+  </div>
 
   <!-- ===== HERO ===== -->
-  <section class="hero-section">
+  <section class="hero-section" style="padding: 4rem 2rem 3rem;">
     <div class="container">
       <span class="hero-label">BLOG</span>
-      <h1 class="hero-title-en">取組・理論・記録</h1>
-      <p class="hero-meta">バレーボール / ソフトバレーボール / Mamba Mentality</p>
+      <h1 class="hero-title-en reveal" style="font-size:clamp(2.5rem,6vw,5rem);">取組・理論・記録</h1>
+      <p class="hero-meta reveal reveal-delay-1">バレーボール / ソフトバレーボール / Mamba Mentality</p>
     </div>
   </section>
 
@@ -71,7 +88,7 @@
     <div class="container">
 
       <!-- Category Filter -->
-      <div class="category-filter">
+      <div class="category-filter reveal">
         <button class="filter-btn active" data-category="all">すべて</button>
         <button class="filter-btn" data-category="ソフトバレーボール">ソフトバレーボール</button>
         <button class="filter-btn" data-category="スパイク">スパイク</button>
@@ -82,414 +99,360 @@
 
       <!-- Blog Layout: Grid + Sidebar -->
       <div class="blog-layout">
-
-      <!-- Article Grid -->
-      <div class="blog-grid" id="blog-grid">
-
-        <article class="post-card" data-category="セッター・トス">
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/pRPBWV7H9Nk/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/pRPBWV7H9Nk/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.04.04</p>
-          <h2 class="post-card-title">僕が考える良いセッターの条件について</h2>
-          <p class="post-card-excerpt">良いセッターはただトスを上げるだけでなく、攻撃をデザインするゲームメーカー。観察力と...</p>
-          <a href="posts/post-004.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/V2RaxOJPGoU/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/V2RaxOJPGoU/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.04.03</p>
-          <h2 class="post-card-title">僕が考える良いトスの上げ方について</h2>
-          <p class="post-card-excerpt">トスの精度を上げるには腕だけでなく体全体の重心移動でボールを送り出す感覚が大切です...</p>
-          <a href="posts/post-005.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/zJPq6FMPtC0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/zJPq6FMPtC0/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.04.02</p>
-          <h2 class="post-card-title">僕が考える良いトスとは何か？</h2>
-          <p class="post-card-excerpt">良いトスの定義はスパイカーによって変わる。相手を見ながら打者が100%の力で打てる...</p>
-          <a href="posts/post-006.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/kMOE_ksbtnU/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/kMOE_ksbtnU/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.04.01</p>
-          <h2 class="post-card-title">ピンチでも焦らない「最強のメンタル」。僕を変えた考え方について</h2>
-          <p class="post-card-excerpt">試合の大事な場面で焦らないために実践している考え方。次のプレーだけに集中するリセット法...</p>
-          <a href="posts/post-007.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/xmLh4KO66LM/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/xmLh4KO66LM/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.31</p>
-          <h2 class="post-card-title">勝負所こそ余裕を演じる大切さについて</h2>
-          <p class="post-card-excerpt">表情・姿勢・態度が相手と味方に与える心理的影響は大きい。余裕を演じると本物の余裕が...</p>
-          <a href="posts/post-008.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ブロック">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/F_nKNc4DCdc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/F_nKNc4DCdc/hqdefault.jpg'">
-          <span class="badge">ブロック</span>
-          <p class="post-card-date">2026.03.30</p>
-          <h2 class="post-card-title">【ストレートヒッターへの対応】センター攻撃に対して僕がどのようにブロックしているのか</h2>
-          <p class="post-card-excerpt">センターからのストレートスパイクへの対応。助走の向きと肩の向きでコースを読む方法...</p>
-          <a href="posts/post-009.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ブロック">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/YzSrUWRutNQ/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/YzSrUWRutNQ/hqdefault.jpg'">
-          <span class="badge">ブロック</span>
-          <p class="post-card-date">2026.03.29</p>
-          <h2 class="post-card-title">センター攻撃に対して僕がどのようにブロックしているのか</h2>
-          <p class="post-card-excerpt">センター攻撃（クイック攻撃）へのブロック。ポジショニングから手の出し方まで具体的に...</p>
-          <a href="posts/post-010.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/6jzdZeNilIE/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/6jzdZeNilIE/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.28</p>
-          <h2 class="post-card-title">簡単にスパイク決定率を爆上げするテクニックを紹介！</h2>
-          <p class="post-card-excerpt">ブロックを見てコースを選ぶ。判断力を磨くことでスパイクの決定率が劇的に上がる方法...</p>
-          <a href="posts/post-011.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/p0HRS25-9do/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/p0HRS25-9do/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.03.27</p>
-          <h2 class="post-card-title">安定したバックトスを上げるためのコツについて</h2>
-          <p class="post-card-excerpt">バックトスは腰の反りと体重移動で距離をコントロール。視線の使い方が安定の鍵になる...</p>
-          <a href="posts/post-012.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/lR8aKj8uJxY/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/lR8aKj8uJxY/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.26</p>
-          <h2 class="post-card-title">忘れられない悔しかった敗戦について</h2>
-          <p class="post-card-excerpt">悔しい敗戦を正直に語る。負けの経験がどのように成長のエネルギーになるかについて...</p>
-          <a href="posts/post-013.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/x40lOxlIBq4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/x40lOxlIBq4/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.03.25</p>
-          <h2 class="post-card-title">トスが割れた・打てないときの効果的な対処法について僕の考え</h2>
-          <p class="post-card-excerpt">トスが割れた場面での冷静な判断。無理に強打せず繋いで次のチャンスを作る考え方...</p>
-          <a href="posts/post-014.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/aO5MrYnGM9A/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/aO5MrYnGM9A/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.03.24</p>
-          <h2 class="post-card-title">トスが伸びて・割れたときの効果的な対処法について僕の考え</h2>
-          <p class="post-card-excerpt">トスが伸びすぎた場面での対処。早い段階での決断が迷いをなくし最善のプレーにつながる...</p>
-          <a href="posts/post-015.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="セッター・トス">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/oIdAnlL_PKc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/oIdAnlL_PKc/hqdefault.jpg'">
-          <span class="badge">セッター・トス</span>
-          <p class="post-card-date">2026.03.23</p>
-          <h2 class="post-card-title">トスが短く・割れたときの効果的な対処法について僕の考え</h2>
-          <p class="post-card-excerpt">短いトスはブロックリスクが高い。フェイントやプッシュで繋ぐ判断が失点を防ぐ鍵...</p>
-          <a href="posts/post-016.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/ymFx8qtzYgw/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ymFx8qtzYgw/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.22</p>
-          <h2 class="post-card-title">僕が試合で勝つために大切にしている言動について</h2>
-          <p class="post-card-excerpt">コート内での言葉がチームの流れを変える。感謝と承認を絶やさない言動の習慣について...</p>
-          <a href="posts/post-017.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/IX7lwMLy4Vc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/IX7lwMLy4Vc/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.21</p>
-          <h2 class="post-card-title">僕が試合で勝つために意識しているギアを上げることについて</h2>
-          <p class="post-card-excerpt">大事な場面でパフォーマンスを高めるギアアップの方法。テンションより集中力を高める...</p>
-          <a href="posts/post-018.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/a7IR-dgREJo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/a7IR-dgREJo/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.20</p>
-          <h2 class="post-card-title">僕が負けから学んだ接戦で点を取る方法について</h2>
-          <p class="post-card-excerpt">接戦では「いつも通りのプレー」が一番。相手の焦りを利用する冷静な攻撃の選び方...</p>
-          <a href="posts/post-019.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="メンタル">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/SBs6K_qQ_YE/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/SBs6K_qQ_YE/hqdefault.jpg'">
-          <span class="badge">メンタル</span>
-          <p class="post-card-date">2026.03.19</p>
-          <h2 class="post-card-title">僕が接戦を勝ち切るために大切にしていること</h2>
-          <p class="post-card-excerpt">接戦に強いチームは声と全員が同じ方向を向いている共通点がある。攻めの姿勢を崩さない...</p>
-          <a href="posts/post-020.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ブロック">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/eBd7zipzTk0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/eBd7zipzTk0/hqdefault.jpg'">
-          <span class="badge">ブロック</span>
-          <p class="post-card-date">2026.03.18</p>
-          <h2 class="post-card-title">僕が思う最強のブロックについて</h2>
-          <p class="post-card-excerpt">最強のブロックはコースを消すブロック。相手に打てるコースがないと感じさせる守備の形...</p>
-          <a href="posts/post-021.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/5y96qlk7TvI/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/5y96qlk7TvI/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.17</p>
-          <h2 class="post-card-title">相手が嫌がるブロックアウトについて</h2>
-          <p class="post-card-excerpt">ブロックアウトはブロッカーの手の端を狙って打つ高度なスパイクテクニック。武器にする方法...</p>
-          <a href="posts/post-022.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/I8lghR_22t0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/I8lghR_22t0/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.16</p>
-          <h2 class="post-card-title">【僕が最後まで隠している技】得意技が対応された後の戦い方について</h2>
-          <p class="post-card-excerpt">読まれた得意技を逆手に取る。対応されたことを「見せ球」として活用する応用戦術...</p>
-          <a href="posts/post-023.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ソフトバレーボール">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/yOx6aLx0dUc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/yOx6aLx0dUc/hqdefault.jpg'">
-          <span class="badge">ソフトバレーボール</span>
-          <p class="post-card-date">2026.03.15</p>
-          <h2 class="post-card-title">僕が大切にしている人と差をつける方法について</h2>
-          <p class="post-card-excerpt">差がつくのは才能じゃなくて習慣。練習後の振り返りと練習外での時間の使い方が鍵...</p>
-          <a href="posts/post-024.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ソフトバレーボール">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/bQiS5w3cWq8/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/bQiS5w3cWq8/hqdefault.jpg'">
-          <span class="badge">ソフトバレーボール</span>
-          <p class="post-card-date">2026.03.14</p>
-          <h2 class="post-card-title">僕が思う上手くなる人の特徴について①「常に◯◯できる人」</h2>
-          <p class="post-card-excerpt">上手くなる人は練習の密度が違う。今日のテーマを持って臨む意識が上達スピードを変える...</p>
-          <a href="posts/post-025.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ブロック">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/9U_PWDhDIKo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9U_PWDhDIKo/hqdefault.jpg'">
-          <span class="badge">ブロック</span>
-          <p class="post-card-date">2026.03.13</p>
-          <h2 class="post-card-title">上手いブロック・嫌なブロックについて</h2>
-          <p class="post-card-excerpt">スパイカーが一番嫌なのはタイミングが合っているブロック。コースを消す心理的プレッシャー...</p>
-          <a href="posts/post-026.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/p7g6lgQo-T4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/p7g6lgQo-T4/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.12</p>
-          <h2 class="post-card-title">【視野の秘密】僕がスパイクを打つときに何を見ているのか</h2>
-          <p class="post-card-excerpt">助走中の広い視野と打点直前のピンポイントフォーカス。視線の使い方が決定率を上げる秘密...</p>
-          <a href="posts/post-027.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/jLXOQDwafyo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/jLXOQDwafyo/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.11</p>
-          <h2 class="post-card-title">本当は誰にも教えたくない僕の得意技について</h2>
-          <p class="post-card-excerpt">試合で何度も決めてきた秘密の技を特別公開。得意技は生まれるものでなく育てるもの...</p>
-          <a href="posts/post-028.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ブロック">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/sz1t84DO7xs/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/sz1t84DO7xs/hqdefault.jpg'">
-          <span class="badge">ブロック</span>
-          <p class="post-card-date">2026.03.10</p>
-          <h2 class="post-card-title">平行スパイクに対するブロックの仕方</h2>
-          <p class="post-card-excerpt">平行（パラレル）スパイクへのブロック。ポジショニングと手の向きでコースを限定する方法...</p>
-          <a href="posts/post-029.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/9AsSrW79MRw/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9AsSrW79MRw/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.09</p>
-          <h2 class="post-card-title">スパイクを打つとき何を考えているのか（強弱の組み立てについて）</h2>
-          <p class="post-card-excerpt">強打とフェイントの組み立て方。今の強打が次のフェイントの布石になる将棋的な考え方...</p>
-          <a href="posts/post-030.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/3-rrZtQ0ZxA/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/3-rrZtQ0ZxA/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.08</p>
-          <h2 class="post-card-title">僕がストレートスパイクを成功させるために意識していること</h2>
-          <p class="post-card-excerpt">ストレートスパイクは体の向きが全て。手首だけでなく体全体の向きでコースを作る方法...</p>
-          <a href="posts/post-031.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="スパイク">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/_O-iwJAgZoM/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/_O-iwJAgZoM/hqdefault.jpg'">
-          <span class="badge">スパイク</span>
-          <p class="post-card-date">2026.03.07</p>
-          <h2 class="post-card-title">僕がクロススパイクを成功させるために意識していること</h2>
-          <p class="post-card-excerpt">クロスは基本だからこそ奥が深い。角度の変化と体の使い方で相手の守備を揺さぶる...</p>
-          <a href="posts/post-032.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ソフトバレーボール">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/fAYeOP4au40/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/fAYeOP4au40/hqdefault.jpg'">
-          <span class="badge">ソフトバレーボール</span>
-          <p class="post-card-date">2026.03.06</p>
-          <h2 class="post-card-title">僕が思うジャンプサーブを成功させるために最も大切なこと</h2>
-          <p class="post-card-excerpt">ジャンプサーブの精度はトスで決まる。安定したトスが全ての基礎という実感を語る...</p>
-          <a href="posts/post-033.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ソフトバレーボール">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/xpHKNwtimj4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/xpHKNwtimj4/hqdefault.jpg'">
-          <span class="badge">ソフトバレーボール</span>
-          <p class="post-card-date">2026.03.05</p>
-          <h2 class="post-card-title">スパイクレシーブ・ディグで僕が最も大切だと思うこと</h2>
-          <p class="post-card-excerpt">ディグで最も大切なのは構えの姿勢と低い重心。常に低い姿勢を維持することで守備が安定...</p>
-          <a href="posts/post-034.html" class="read-more">続きを読む →</a>
-        </article>
-
-        <article class="post-card" data-category="ソフトバレーボール">
-
-          <img class="post-eyecatch" src="https://img.youtube.com/vi/O0y0Ag6O8xA/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/O0y0Ag6O8xA/hqdefault.jpg'">
-          <span class="badge">ソフトバレーボール</span>
-          <p class="post-card-date">2026.03.04</p>
-          <h2 class="post-card-title">サーブカット・キャッチで僕が大切にしていること</h2>
-          <p class="post-card-excerpt">サーブカットは早く落下点に入るフットワークが全ての基礎。体の正面で処理することが安定の鍵...</p>
-          <a href="posts/post-035.html" class="read-more">続きを読む →</a>
-        </article>
-
-      </div>
-
-      <!-- No results message (hidden by default) -->
-      <p id="no-results" style="display:none;text-align:center;font-family:'DM Mono',monospace;font-size:13px;color:var(--text-muted);letter-spacing:0.1em;padding:3rem 0;">
-        該当する記事がありません
-      </p>
-
-      </div><!-- end blog-grid -->
-
-      <!-- ===== SIDEBAR ===== -->
-      <aside class="blog-sidebar">
-
-        <!-- 検索ウィジェット -->
-        <div class="sidebar-widget">
-          <div class="sidebar-widget-title">SEARCH</div>
-          <div class="sidebar-search-wrap">
-            <input type="text" id="sidebar-search-input" class="sidebar-search-input"
-                   placeholder="記事を検索..."
-                   onkeydown="if(event.key==='Enter') sidebarSearch()">
-            <button class="sidebar-search-btn" onclick="sidebarSearch()" aria-label="検索">
-              <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-            </button>
+        <!-- Article Grid -->
+        <div class="blog-grid" id="blog-grid">
+
+          <article class="post-card reveal" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/pRPBWV7H9Nk/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/pRPBWV7H9Nk/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.04.04</p>
+            <h2 class="post-card-title">僕が考える良いセッターの条件について</h2>
+            <p class="post-card-excerpt">良いセッターはただトスを上げるだけでなく、攻撃をデザインするゲームメーカー。観察力と...</p>
+            <a href="posts/post-004.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/V2RaxOJPGoU/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/V2RaxOJPGoU/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.04.03</p>
+            <h2 class="post-card-title">僕が考える良いトスの上げ方について</h2>
+            <p class="post-card-excerpt">トスの精度を上げるには腕だけでなく体全体の重心移動でボールを送り出す感覚が大切です...</p>
+            <a href="posts/post-005.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/zJPq6FMPtC0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/zJPq6FMPtC0/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.04.02</p>
+            <h2 class="post-card-title">僕が考える良いトスとは何か？</h2>
+            <p class="post-card-excerpt">良いトスの定義はスパイカーによって変わる。相手を見ながら打者が100%の力で打てる...</p>
+            <a href="posts/post-006.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/kMOE_ksbtnU/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/kMOE_ksbtnU/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.04.01</p>
+            <h2 class="post-card-title">ピンチでも焦らない「最強のメンタル」。僕を変えた考え方について</h2>
+            <p class="post-card-excerpt">試合の大事な場面で焦らないために実践している考え方。次のプレーだけに集中するリセット法...</p>
+            <a href="posts/post-007.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/xmLh4KO66LM/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/xmLh4KO66LM/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.31</p>
+            <h2 class="post-card-title">勝負所こそ余裕を演じる大切さについて</h2>
+            <p class="post-card-excerpt">表情・姿勢・態度が相手と味方に与える心理的影響は大きい。余裕を演じると本物の余裕が...</p>
+            <a href="posts/post-008.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ブロック">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/F_nKNc4DCdc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/F_nKNc4DCdc/hqdefault.jpg'">
+            <span class="badge">ブロック</span>
+            <p class="post-card-date">2026.03.30</p>
+            <h2 class="post-card-title">【ストレートヒッターへの対応】センター攻撃に対して僕がどのようにブロックしているのか</h2>
+            <p class="post-card-excerpt">センターからのストレートスパイクへの対応。助走の向きと肩の向きでコースを読む方法...</p>
+            <a href="posts/post-009.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="ブロック">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/YzSrUWRutNQ/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/YzSrUWRutNQ/hqdefault.jpg'">
+            <span class="badge">ブロック</span>
+            <p class="post-card-date">2026.03.29</p>
+            <h2 class="post-card-title">センター攻撃に対して僕がどのようにブロックしているのか</h2>
+            <p class="post-card-excerpt">センター攻撃（クイック攻撃）へのブロック。ポジショニングから手の出し方まで具体的に...</p>
+            <a href="posts/post-010.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/6jzdZeNilIE/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/6jzdZeNilIE/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.28</p>
+            <h2 class="post-card-title">簡単にスパイク決定率を爆上げするテクニックを紹介！</h2>
+            <p class="post-card-excerpt">ブロックを見てコースを選ぶ。判断力を磨くことでスパイクの決定率が劇的に上がる方法...</p>
+            <a href="posts/post-011.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/p0HRS25-9do/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/p0HRS25-9do/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.03.27</p>
+            <h2 class="post-card-title">安定したバックトスを上げるためのコツについて</h2>
+            <p class="post-card-excerpt">バックトスは腰の反りと体重移動で距離をコントロール。視線の使い方が安定の鍵になる...</p>
+            <a href="posts/post-012.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/lR8aKj8uJxY/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/lR8aKj8uJxY/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.26</p>
+            <h2 class="post-card-title">忘れられない悔しかった敗戦について</h2>
+            <p class="post-card-excerpt">悔しい敗戦を正直に語る。負けの経験がどのように成長のエネルギーになるかについて...</p>
+            <a href="posts/post-013.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/x40lOxlIBq4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/x40lOxlIBq4/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.03.25</p>
+            <h2 class="post-card-title">トスが割れた・打てないときの効果的な対処法について僕の考え</h2>
+            <p class="post-card-excerpt">トスが割れた場面での冷静な判断。無理に強打せず繋いで次のチャンスを作る考え方...</p>
+            <a href="posts/post-014.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/aO5MrYnGM9A/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/aO5MrYnGM9A/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.03.24</p>
+            <h2 class="post-card-title">トスが伸びて・割れたときの効果的な対処法について僕の考え</h2>
+            <p class="post-card-excerpt">トスが伸びすぎた場面での対処。早い段階での決断が迷いをなくし最善のプレーにつながる...</p>
+            <a href="posts/post-015.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="セッター・トス">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/oIdAnlL_PKc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/oIdAnlL_PKc/hqdefault.jpg'">
+            <span class="badge">セッター・トス</span>
+            <p class="post-card-date">2026.03.23</p>
+            <h2 class="post-card-title">トスが短く・割れたときの効果的な対処法について僕の考え</h2>
+            <p class="post-card-excerpt">短いトスはブロックリスクが高い。フェイントやプッシュで繋ぐ判断が失点を防ぐ鍵...</p>
+            <a href="posts/post-016.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/ymFx8qtzYgw/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ymFx8qtzYgw/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.22</p>
+            <h2 class="post-card-title">僕が試合で勝つために大切にしている言動について</h2>
+            <p class="post-card-excerpt">コート内での言葉がチームの流れを変える。感謝と承認を絶やさない言動の習慣について...</p>
+            <a href="posts/post-017.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/IX7lwMLy4Vc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/IX7lwMLy4Vc/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.21</p>
+            <h2 class="post-card-title">僕が試合で勝つために意識しているギアを上げることについて</h2>
+            <p class="post-card-excerpt">大事な場面でパフォーマンスを高めるギアアップの方法。テンションより集中力を高める...</p>
+            <a href="posts/post-018.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/a7IR-dgREJo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/a7IR-dgREJo/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.20</p>
+            <h2 class="post-card-title">僕が負けから学んだ接戦で点を取る方法について</h2>
+            <p class="post-card-excerpt">接戦では「いつも通りのプレー」が一番。相手の焦りを利用する冷静な攻撃の選び方...</p>
+            <a href="posts/post-019.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="メンタル">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/SBs6K_qQ_YE/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/SBs6K_qQ_YE/hqdefault.jpg'">
+            <span class="badge">メンタル</span>
+            <p class="post-card-date">2026.03.19</p>
+            <h2 class="post-card-title">僕が接戦を勝ち切るために大切にしていること</h2>
+            <p class="post-card-excerpt">接戦に強いチームは声と全員が同じ方向を向いている共通点がある。攻めの姿勢を崩さない...</p>
+            <a href="posts/post-020.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ブロック">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/eBd7zipzTk0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/eBd7zipzTk0/hqdefault.jpg'">
+            <span class="badge">ブロック</span>
+            <p class="post-card-date">2026.03.18</p>
+            <h2 class="post-card-title">僕が思う最強のブロックについて</h2>
+            <p class="post-card-excerpt">最強のブロックはコースを消すブロック。相手に打てるコースがないと感じさせる守備の形...</p>
+            <a href="posts/post-021.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/5y96qlk7TvI/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/5y96qlk7TvI/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.17</p>
+            <h2 class="post-card-title">相手が嫌がるブロックアウトについて</h2>
+            <p class="post-card-excerpt">ブロックアウトはブロッカーの手の端を狙って打つ高度なスパイクテクニック。武器にする方法...</p>
+            <a href="posts/post-022.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/I8lghR_22t0/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/I8lghR_22t0/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.16</p>
+            <h2 class="post-card-title">【僕が最後まで隠している技】得意技が対応された後の戦い方について</h2>
+            <p class="post-card-excerpt">読まれた得意技を逆手に取る。対応されたことを「見せ球」として活用する応用戦術...</p>
+            <a href="posts/post-023.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="ソフトバレーボール">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/yOx6aLx0dUc/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/yOx6aLx0dUc/hqdefault.jpg'">
+            <span class="badge">ソフトバレーボール</span>
+            <p class="post-card-date">2026.03.15</p>
+            <h2 class="post-card-title">僕が大切にしている人と差をつける方法について</h2>
+            <p class="post-card-excerpt">差がつくのは才能じゃなくて習慣。練習後の振り返りと練習外での時間の使い方が鍵...</p>
+            <a href="posts/post-024.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ソフトバレーボール">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/bQiS5w3cWq8/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/bQiS5w3cWq8/hqdefault.jpg'">
+            <span class="badge">ソフトバレーボール</span>
+            <p class="post-card-date">2026.03.14</p>
+            <h2 class="post-card-title">僕が思う上手くなる人の特徴について①「常に◯◯できる人」</h2>
+            <p class="post-card-excerpt">上手くなる人は練習の密度が違う。今日のテーマを持って臨む意識が上達スピードを変える...</p>
+            <a href="posts/post-025.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="ブロック">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/9U_PWDhDIKo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9U_PWDhDIKo/hqdefault.jpg'">
+            <span class="badge">ブロック</span>
+            <p class="post-card-date">2026.03.13</p>
+            <h2 class="post-card-title">上手いブロック・嫌なブロックについて</h2>
+            <p class="post-card-excerpt">スパイカーが一番嫌なのはタイミングが合っているブロック。コースを消す心理的プレッシャー...</p>
+            <a href="posts/post-026.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/p7g6lgQo-T4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/p7g6lgQo-T4/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.12</p>
+            <h2 class="post-card-title">【視野の秘密】僕がスパイクを打つときに何を見ているのか</h2>
+            <p class="post-card-excerpt">助走中の広い視野と打点直前のピンポイントフォーカス。視線の使い方が決定率を上げる秘密...</p>
+            <a href="posts/post-027.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/jLXOQDwafyo/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/jLXOQDwafyo/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.11</p>
+            <h2 class="post-card-title">本当は誰にも教えたくない僕の得意技について</h2>
+            <p class="post-card-excerpt">試合で何度も決めてきた秘密の技を特別公開。得意技は生まれるものでなく育てるもの...</p>
+            <a href="posts/post-028.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ブロック">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/sz1t84DO7xs/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/sz1t84DO7xs/hqdefault.jpg'">
+            <span class="badge">ブロック</span>
+            <p class="post-card-date">2026.03.10</p>
+            <h2 class="post-card-title">平行スパイクに対するブロックの仕方</h2>
+            <p class="post-card-excerpt">平行（パラレル）スパイクへのブロック。ポジショニングと手の向きでコースを限定する方法...</p>
+            <a href="posts/post-029.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/9AsSrW79MRw/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9AsSrW79MRw/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.09</p>
+            <h2 class="post-card-title">スパイクを打つとき何を考えているのか（強弱の組み立てについて）</h2>
+            <p class="post-card-excerpt">強打とフェイントの組み立て方。今の強打が次のフェイントの布石になる将棋的な考え方...</p>
+            <a href="posts/post-030.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/3-rrZtQ0ZxA/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/3-rrZtQ0ZxA/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.08</p>
+            <h2 class="post-card-title">僕がストレートスパイクを成功させるために意識していること</h2>
+            <p class="post-card-excerpt">ストレートスパイクは体の向きが全て。手首だけでなく体全体の向きでコースを作る方法...</p>
+            <a href="posts/post-031.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="スパイク">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/_O-iwJAgZoM/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/_O-iwJAgZoM/hqdefault.jpg'">
+            <span class="badge">スパイク</span>
+            <p class="post-card-date">2026.03.07</p>
+            <h2 class="post-card-title">僕がクロススパイクを成功させるために意識していること</h2>
+            <p class="post-card-excerpt">クロスは基本だからこそ奥が深い。角度の変化と体の使い方で相手の守備を揺さぶる...</p>
+            <a href="posts/post-032.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ソフトバレーボール">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/fAYeOP4au40/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/fAYeOP4au40/hqdefault.jpg'">
+            <span class="badge">ソフトバレーボール</span>
+            <p class="post-card-date">2026.03.06</p>
+            <h2 class="post-card-title">僕が思うジャンプサーブを成功させるために最も大切なこと</h2>
+            <p class="post-card-excerpt">ジャンプサーブの精度はトスで決まる。安定したトスが全ての基礎という実感を語る...</p>
+            <a href="posts/post-033.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal" data-category="ソフトバレーボール">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/xpHKNwtimj4/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/xpHKNwtimj4/hqdefault.jpg'">
+            <span class="badge">ソフトバレーボール</span>
+            <p class="post-card-date">2026.03.05</p>
+            <h2 class="post-card-title">スパイクレシーブ・ディグで僕が最も大切だと思うこと</h2>
+            <p class="post-card-excerpt">ディグで最も大切なのは構えの姿勢と低い重心。常に低い姿勢を維持することで守備が安定...</p>
+            <a href="posts/post-034.html" class="read-more">続きを読む →</a>
+          </article>
+
+          <article class="post-card reveal reveal-delay-1" data-category="ソフトバレーボール">
+            <img class="post-eyecatch" src="https://img.youtube.com/vi/O0y0Ag6O8xA/maxresdefault.jpg" alt="動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/O0y0Ag6O8xA/hqdefault.jpg'">
+            <span class="badge">ソフトバレーボール</span>
+            <p class="post-card-date">2026.03.04</p>
+            <h2 class="post-card-title">サーブカット・キャッチで僕が大切にしていること</h2>
+            <p class="post-card-excerpt">サーブカットは早く落下点に入るフットワークが全ての基礎。体の正面で処理することが安定の鍵...</p>
+            <a href="posts/post-035.html" class="read-more">続きを読む →</a>
+          </article>
+
+        </div><!-- end blog-grid -->
+
+        <p id="no-results" style="display:none;text-align:center;font-family:'DM Mono',monospace;font-size:13px;color:var(--text-muted);letter-spacing:0.1em;padding:3rem 0;">
+          該当する記事がありません
+        </p>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget reveal">
+            <div class="sidebar-widget-title">SEARCH</div>
+            <div class="sidebar-search-wrap">
+              <input type="text" id="sidebar-search-input" class="sidebar-search-input" placeholder="記事を検索..."
+                     onkeydown="if(event.key==='Enter') sidebarSearch()">
+              <button class="sidebar-search-btn" onclick="sidebarSearch()" aria-label="検索">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- カテゴリ一覧 -->
-        <div class="sidebar-widget">
-          <div class="sidebar-widget-title">CATEGORY</div>
-          <ul class="sidebar-cat-list">
-            <li>
-              <a href="blog.html">
-                バレーボール上達理論
-                <span class="sidebar-cat-count">12</span>
-              </a>
-            </li>
-            <li>
-              <a href="blog.html">
-                ソフトバレーボール
-                <span class="sidebar-cat-count">13</span>
-              </a>
-            </li>
-            <li>
-              <a href="blog.html">
-                Mamba Mentality
-                <span class="sidebar-cat-count">2</span>
-              </a>
-            </li>
-            <li>
-              <a href="blog.html">
-                今日が人生で一番若い日
-                <span class="sidebar-cat-count">1</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="sidebar-widget reveal reveal-delay-1">
+            <div class="sidebar-widget-title">CATEGORY</div>
+            <ul class="sidebar-cat-list">
+              <li><a href="blog.html">バレーボール上達理論 <span class="sidebar-cat-count">12</span></a></li>
+              <li><a href="blog.html">ソフトバレーボール <span class="sidebar-cat-count">13</span></a></li>
+              <li><a href="blog.html">Mamba Mentality <span class="sidebar-cat-count">2</span></a></li>
+              <li><a href="blog.html">今日が人生で一番若い日 <span class="sidebar-cat-count">1</span></a></li>
+            </ul>
+          </div>
 
-        <!-- 最新記事 -->
-        <div class="sidebar-widget">
-          <div class="sidebar-widget-title">LATEST POSTS</div>
-          <ul class="sidebar-latest-list">
-            <li><a href="posts/post-035.html">【ソフトバレー】継続が力をつくる習慣術</a></li>
-            <li><a href="posts/post-034.html">【ソフトバレー】試合で緊張しないための準備</a></li>
-            <li><a href="posts/post-033.html">【ソフトバレー】メンタルの鍛え方</a></li>
-            <li><a href="posts/post-032.html">【ソフトバレー】スパイクの威力を高める筋トレ</a></li>
-            <li><a href="posts/post-031.html">【ソフトバレー】試合前のウォームアップ</a></li>
-          </ul>
-        </div>
-
-      </aside><!-- end blog-sidebar -->
+          <div class="sidebar-widget reveal reveal-delay-2">
+            <div class="sidebar-widget-title">LATEST POSTS</div>
+            <ul class="sidebar-latest-list">
+              <li><a href="posts/post-035.html">【ソフトバレー】継続が力をつくる習慣術</a></li>
+              <li><a href="posts/post-034.html">【ソフトバレー】試合で緊張しないための準備</a></li>
+              <li><a href="posts/post-033.html">【ソフトバレー】メンタルの鍛え方</a></li>
+              <li><a href="posts/post-032.html">【ソフトバレー】スパイクの威力を高める筋トレ</a></li>
+              <li><a href="posts/post-031.html">【ソフトバレー】試合前のウォームアップ</a></li>
+            </ul>
+          </div>
+        </aside>
 
       </div><!-- end blog-layout -->
-
     </div>
   </section>
-
 </main>
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
-  <p><span id="fy"></span> Hiroya<script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script> Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <p><span id="fy"></span> Hiroya
+    <script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script>
+    Machikawa | 香川県バレーボール・ソフトバレー
+  </p>
   <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
 </footer>
 
 <script>
-  // Hamburger
+  /* ── Glassmorphism Header ── */
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 48);
+  }, { passive: true });
+
+  /* ── Hamburger ── */
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
   hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
@@ -499,25 +462,39 @@
     }
   });
 
-  // Category filter
+  /* ── Scroll Reveal ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+
+  /* Hero immediate reveal */
+  document.querySelectorAll('.hero-section .reveal').forEach((el, i) => {
+    setTimeout(() => el.classList.add('revealed'), 100 + i * 80);
+  });
+
+  /* ── Category Filter ── */
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards      = document.querySelectorAll('#blog-grid .post-card');
-  const noResults  = document.getElementById('no-results');
+  const cards = document.querySelectorAll('#blog-grid .post-card');
+  const noResults = document.getElementById('no-results');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-
       const cat = btn.dataset.category;
       let visible = 0;
-
       cards.forEach(card => {
         const match = cat === 'all' || card.dataset.category === cat;
         card.style.display = match ? 'flex' : 'none';
         if (match) visible++;
       });
-
       noResults.style.display = visible === 0 ? 'block' : 'none';
     });
   });
