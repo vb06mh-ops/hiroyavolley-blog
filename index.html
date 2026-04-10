@@ -7,12 +7,14 @@
   <meta name="description" content="香川県からバレー・ソフトバレーがもっと楽しくなるヒントを配信中！バレーボール・ソフトバレー選手・元体育教師の町川大弥による上達理論・技術解説ブログ。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+
   <!-- SEO -->
   <meta name="keywords" content="バレーボール,ソフトバレー,香川県,町川大弥,ソフトバレーボール,上達,技術解説,hiroyavolley">
   <meta name="author" content="町川大弥">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://vb06mh-ops.github.io/hiroyavolley-blog/">
+
   <!-- OGP -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="バレーボール・ソフトバレー上達のコツ｜香川県 / Kagawa Volleyball Player 町川大弥の配信ブログ">
@@ -21,12 +23,14 @@
   <meta property="og:image" content="https://vb06mh-ops.github.io/hiroyavolley-blog/images/hiroya-hero.jpg">
   <meta property="og:site_name" content="町川大弥 バレーボールブログ">
   <meta property="og:locale" content="ja_JP">
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@machikawahiroya">
   <meta name="twitter:title" content="バレーボール・ソフトバレー上達のコツ｜町川大弥の配信ブログ">
   <meta name="twitter:description" content="香川県からバレー・ソフトバレーがもっと楽しくなるヒントを配信中！">
   <meta name="twitter:image" content="https://vb06mh-ops.github.io/hiroyavolley-blog/images/hiroya-hero.jpg">
+
   <!-- 構造化データ -->
   <script type="application/ld+json">
   {
@@ -46,12 +50,13 @@
     ]
   }
   </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ===== HEADER ===== -->
-<header class="site-header">
+<header class="site-header" id="site-header">
   <a href="index.html" class="site-logo">HIROYA</a>
   <nav>
     <ul class="site-nav">
@@ -65,6 +70,7 @@
     <span></span><span></span><span></span>
   </button>
 </header>
+
 <nav class="mobile-nav" id="mobile-nav">
   <a href="index.html">HOME</a>
   <a href="about.html">ABOUT</a>
@@ -74,13 +80,52 @@
 
 <main>
 
+  <!-- ===== TICKER STRIP ===== -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span>LOGIC</span>
+      <span class="t-gold">✦</span>
+      <span>PASSION</span>
+      <span class="t-gold">✦</span>
+      <span>VOLLEYBALL</span>
+      <span class="t-gold">✦</span>
+      <span>日本一への道</span>
+      <span class="t-gold">✦</span>
+      <span>MAMBA MENTALITY</span>
+      <span class="t-gold">✦</span>
+      <span>HIROYA</span>
+      <span class="t-gold">✦</span>
+      <span>香川から</span>
+      <span class="t-gold">✦</span>
+      <span>KAGAWA</span>
+      <span class="t-gold">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>LOGIC</span>
+      <span class="t-gold">✦</span>
+      <span>PASSION</span>
+      <span class="t-gold">✦</span>
+      <span>VOLLEYBALL</span>
+      <span class="t-gold">✦</span>
+      <span>日本一への道</span>
+      <span class="t-gold">✦</span>
+      <span>MAMBA MENTALITY</span>
+      <span class="t-gold">✦</span>
+      <span>HIROYA</span>
+      <span class="t-gold">✦</span>
+      <span>香川から</span>
+      <span class="t-gold">✦</span>
+      <span>KAGAWA</span>
+      <span class="t-gold">✦</span>
+    </div>
+  </div>
+
   <!-- ===== SECTION 1: HERO ===== -->
   <section class="hero-section">
     <div class="container">
 
       <!-- ── 上段：タイトル左 ＋ 丸アイコン右 ── -->
       <div class="hero-top-row">
-        <div class="hero-top-text">
+        <div class="hero-top-text reveal">
           <span class="hero-label">MAMBA MENTALITY / KAGAWA → JAPAN No.1</span>
           <div class="hero-blog-title">
             <span class="hero-blog-title-jp">バレーボール・ソフトバレー上達のコツ</span>
@@ -89,11 +134,9 @@
         </div>
 
         <!-- 丸型アイコン写真 -->
-        <div class="hero-avatar-wrap">
+        <div class="hero-avatar-wrap reveal reveal-delay-1">
           <div class="hero-avatar-ring">
-            <img src="images/hiroya-hero.jpg"
-                 alt="町川大弥"
-                 class="hero-avatar-img"
+            <img src="images/hiroya-hero.jpg" alt="町川大弥" class="hero-avatar-img"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="hero-avatar-fallback" style="display:none;">🏐</div>
           </div>
@@ -102,21 +145,22 @@
       </div>
 
       <!-- ── 下段：メインタイトル・キャッチ・ボタン ── -->
-      <h1 class="hero-title-en">HIROYA<br>VOLLEYBALL</h1>
+      <h1 class="hero-title-en reveal reveal-delay-1">HIROYA<br>VOLLEYBALL</h1>
 
-      <div class="hero-subtitle-wrap">
+      <div class="hero-subtitle-wrap reveal reveal-delay-2">
         <span class="hero-subtitle-line"></span>
         <p class="hero-subtitle">香川県からバレー・ソフトバレーがもっと楽しくなるヒントを配信中！</p>
         <span class="hero-subtitle-line"></span>
       </div>
 
-      <p class="hero-catch">
+      <p class="hero-catch reveal reveal-delay-2">
         自分を信じれば、必ず上手くなれる。<br>
         香川から、No.1 Playerへの挑戦。
       </p>
-      <p class="hero-meta">バレーボール・ソフトバレー選手 / 香川県 / 元体育教師</p>
 
-      <div class="hero-social">
+      <p class="hero-meta reveal reveal-delay-3">バレーボール・ソフトバレー選手 / 香川県 / 元体育教師</p>
+
+      <div class="hero-social reveal reveal-delay-3">
         <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="hero-social-link">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
           YouTube
@@ -131,7 +175,7 @@
         </a>
       </div>
 
-      <div class="hero-buttons">
+      <div class="hero-buttons reveal reveal-delay-4">
         <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="btn btn-gold">▶ YouTubeを見る</a>
         <a href="blog.html" class="btn btn-outline">📖 ブログを読む</a>
       </div>
@@ -142,18 +186,18 @@
   <!-- ===== SECTION 2: MISSION ===== -->
   <section class="section-dark">
     <div class="container">
-      <span class="section-label">MISSION</span>
-      <h2 class="section-title-dark">このブログで、あなたに届けたいこと</h2>
+      <span class="section-label reveal">MISSION</span>
+      <h2 class="section-title-dark reveal reveal-delay-1">このブログで、あなたに届けたいこと</h2>
       <div class="mission-grid">
-        <div class="mission-card">
+        <div class="mission-card reveal reveal-delay-1">
           <h3 class="mission-card-title">前向きな気持ち</h3>
           <p class="mission-card-text">壁にぶつかったとき、また頑張ろうと思えるきっかけを届けます。</p>
         </div>
-        <div class="mission-card">
+        <div class="mission-card reveal reveal-delay-2">
           <h3 class="mission-card-title">新しい発見</h3>
           <p class="mission-card-text">「そういう考え方があったのか」という気づきを共有していきます。</p>
         </div>
-        <div class="mission-card">
+        <div class="mission-card reveal reveal-delay-3">
           <h3 class="mission-card-title">やる気と確信</h3>
           <p class="mission-card-text">「自分にもできる」と感じてもらえる取組の記録を発信します。</p>
         </div>
@@ -164,32 +208,31 @@
   <!-- ===== SECTION 3: PROFILE INTRO (WHITE) ===== -->
   <section class="section-white">
     <div class="container">
-      <span class="section-label" style="color:#7B5EA7;">ABOUT HIROYA</span>
-      <h2 class="section-title-white">173cm・70kg。環境も才能も特別じゃない。</h2>
+      <span class="section-label reveal" style="color:#552583;">ABOUT HIROYA</span>
+      <h2 class="section-title-white reveal reveal-delay-1">173cm・70kg。環境も才能も特別じゃない。</h2>
       <div class="about-body">
-        <p>
+        <p class="reveal reveal-delay-2">
           それでも、自分を信じて努力を続けることで<br>
           結果が出せることを——自分自身で証明したいと思っています。
         </p>
-        <p>
+        <p class="reveal reveal-delay-3">
           どんな壁にも立ち向かい、GRIT（やり抜く力）と<br>
           断固たる意志で進み続ける。今日が、人生で一番若い日。
         </p>
       </div>
-      <a href="about.html" style="display:inline-block;margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:13px;color:#7B5EA7;letter-spacing:0.1em;font-weight:500;">もっと読む →</a>
+      <a href="about.html" class="reveal reveal-delay-4" style="display:inline-flex;align-items:center;gap:8px;margin-top:1.5rem;font-family:'DM Mono',monospace;font-size:0.75rem;color:#552583;letter-spacing:0.12em;font-weight:600;transition:gap 0.2s;">もっと読む →</a>
     </div>
   </section>
 
   <!-- ===== SECTION 4: LATEST POSTS ===== -->
   <section class="section-dark">
     <div class="container">
-      <span class="section-label">LATEST POSTS</span>
-      <h2 class="section-title-dark">最新の取組・理論記事</h2>
-
+      <span class="section-label reveal">LATEST POSTS</span>
+      <h2 class="section-title-dark reveal reveal-delay-1">最新の取組・<em>理論記事</em></h2>
       <div class="blog-grid">
 
         <!-- Card 1 (featured / full-width) -->
-        <article class="post-card featured">
+        <article class="post-card featured reveal">
           <span class="badge">セッター・トス</span>
           <p class="post-card-date">2026.04.04</p>
           <h3 class="post-card-title">僕が考える良いセッターの条件について</h3>
@@ -198,7 +241,7 @@
         </article>
 
         <!-- Card 2 -->
-        <article class="post-card">
+        <article class="post-card reveal reveal-delay-1">
           <span class="badge">セッター・トス</span>
           <p class="post-card-date">2026.04.03</p>
           <h3 class="post-card-title">僕が考える良いトスの上げ方について</h3>
@@ -207,7 +250,7 @@
         </article>
 
         <!-- Card 3 -->
-        <article class="post-card">
+        <article class="post-card reveal reveal-delay-2">
           <span class="badge">メンタル</span>
           <p class="post-card-date">2026.04.01</p>
           <h3 class="post-card-title">ピンチでも焦らない「最強のメンタル」。僕を変えた考え方について</h3>
@@ -216,8 +259,7 @@
         </article>
 
       </div>
-
-      <div style="text-align:center;margin-top:2.5rem;">
+      <div style="text-align:center;margin-top:2.5rem;" class="reveal">
         <a href="blog.html" class="btn btn-outline">すべての記事を見る →</a>
       </div>
     </div>
@@ -226,22 +268,23 @@
   <!-- ===== SECTION 5: YOUTUBE (WHITE) ===== -->
   <section class="section-white">
     <div class="container">
-      <span class="section-label" style="color:#7B5EA7;">YOUTUBE</span>
-      <h2 class="section-title-white">hiroyavolley — 毎日更新中</h2>
-      <p class="about-body" style="margin-bottom:2rem;">
+      <span class="section-label reveal" style="color:#552583;">YOUTUBE</span>
+      <h2 class="section-title-white reveal reveal-delay-1">hiroyavolley — 毎日更新中</h2>
+      <p class="about-body reveal reveal-delay-2" style="margin-bottom:2rem;">
         バレーボール・ソフトバレーの理論・技術・取組をYouTubeで発信中。<br>
         動画の内容はブログ記事でも読めます。
       </p>
-      <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="btn btn-gold">▶ チャンネルを見る</a>
+      <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="btn btn-gold reveal reveal-delay-3">▶ チャンネルを見る</a>
     </div>
   </section>
 
   <!-- ===== SECTION 6: CTA ===== -->
   <section class="cta-section">
     <div class="container">
-      <h2 class="cta-title">一緒にバレーボールを好きになろう</h2>
-      <p class="cta-sub">応援メッセージ・ご相談・コラボのお問い合わせはこちらから</p>
-      <a href="mailto:vb06mh@gmail.com" class="btn btn-gold">📩 メッセージを送る</a>
+      <span class="section-label reveal" style="color:rgba(253,185,39,0.8);justify-content:center;">CONTACT</span>
+      <h2 class="cta-title reveal reveal-delay-1">一緒にバレーボールを<em>好きになろう</em></h2>
+      <p class="cta-sub reveal reveal-delay-2">応援メッセージ・ご相談・コラボのお問い合わせはこちらから</p>
+      <a href="mailto:vb06mh@gmail.com" class="btn btn-gold reveal reveal-delay-3">📩 メッセージを送る</a>
     </div>
   </section>
 
@@ -249,20 +292,48 @@
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
-  <p><span id="fy"></span> Hiroya<script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script> Machikawa | 香川県バレーボール・ソフトバレー</p>
+  <p><span id="fy"></span> Hiroya
+    <script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script>
+    Machikawa | 香川県バレーボール・ソフトバレー
+  </p>
   <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
 </footer>
 
 <script>
+  /* ── Glassmorphism Header on scroll ── */
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 48);
+  }, { passive: true });
+
+  /* ── Hamburger menu ── */
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
-  hamburger.addEventListener('click', () => {
-    mobileNav.classList.toggle('open');
-  });
+  hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
   document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
       mobileNav.classList.remove('open');
     }
+  });
+
+  /* ── Scroll Reveal (Intersection Observer) ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+
+  /* ── Hero elements reveal immediately ── */
+  document.querySelectorAll('.hero-section .reveal').forEach((el, i) => {
+    setTimeout(() => el.classList.add('revealed'), 100 + i * 80);
+  });
+  document.querySelectorAll('.ticker-strip .reveal').forEach(el => {
+    el.classList.add('revealed');
   });
 </script>
 </body>
