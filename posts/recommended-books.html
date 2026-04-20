@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>人生観が変わったおすすめ本46冊 | 町川大弥 HIROYA MACHIKAWA</title>
-  <meta name="description" content="町川大弥が実際に読んで人生観が変わったおすすめ本46冊。マインドセット・お金・恋愛・思考法・生き方など6カテゴリーでまとめました。">
-  <meta name="author" content="町川大弥">
+  <meta name="description" content="町川大弥が実際に読んで人生観が変わったおすすめ本46冊を紹介。自己成長・お金・思考法・メンタルなど8カテゴリで解説。">
+  <title>人生観が変わったおすすめ本46冊 | 町川大弥 HIROYA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="人生観が変わったおすすめ本46冊 | 町川大弥 HIROYA">
+  <meta property="og:description" content="町川大弥が実際に読んで人生観が変わったおすすめ本46冊。自己成長・お金・思考法・メンタルなど8カテゴリで紹介。">
+  <meta property="og:url" content="https://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html">
+  <meta property="og:image" content="https://vb06mh-ops.github.io/hiroyavolley-blog/images/hiroya-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@machikawahiroya">
+  <meta name="article:category" content="読書・自己成長">
+  <meta name="keywords" content="おすすめ本,読書,自己成長,習慣,お金,思考法,人生観,町川大弥">
+  <meta name="author" content="町川大弥">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL7V0F082Y"></script>
@@ -21,163 +30,170 @@
   </script>
 
   <style>
-    /* ─── Book Post Styles ─── */
-    .book-intro {
-      background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(255,255,255,0.02) 100%);
-      border-left: 3px solid var(--gold);
-      padding: 1.5rem 2rem;
-      margin: 2rem 0 3rem;
-      border-radius: 0 8px 8px 0;
-    }
-    .book-intro p {
-      margin: 0;
-      font-family: 'Noto Serif JP', serif;
-      font-size: 1.05rem;
-      line-height: 1.9;
-      color: var(--text-muted);
-    }
-
+    /* ── Book list styles ── */
     .book-category {
-      margin: 3.5rem 0 2rem;
+      margin: 3rem 0 1.5rem;
     }
-    .book-category-header {
-      display: flex;
+    .book-category-label {
+      display: inline-flex;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid rgba(212,175,55,0.3);
-    }
-    .book-category-icon {
-      font-size: 1.8rem;
-      line-height: 1;
-    }
-    .book-category-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(1.4rem, 3vw, 1.8rem);
-      letter-spacing: 0.05em;
-      color: var(--gold);
-      margin: 0;
-    }
-    .book-category-sub {
+      gap: 0.6rem;
       font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      letter-spacing: 0.12em;
-      margin-left: auto;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
     }
-
+    .book-category-label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .book-category h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      color: var(--text-main);
+      border-left: 3px solid var(--gold);
+      padding-left: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
     .book-list {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      gap: 1rem;
     }
     .book-item {
-      display: grid;
-      grid-template-columns: 2.5rem 1fr;
-      gap: 0 1.2rem;
-      align-items: start;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
       padding: 1.2rem 1.4rem;
-      transition: border-color 0.2s, background 0.2s;
+      transition: border-color 0.25s, transform 0.25s;
+      position: relative;
     }
     .book-item:hover {
-      border-color: rgba(212,175,55,0.35);
-      background: rgba(212,175,55,0.04);
+      border-color: rgba(253,185,39,0.4);
+      transform: translateX(4px);
     }
     .book-num {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
       color: var(--gold);
-      opacity: 0.5;
-      line-height: 1.2;
-      text-align: right;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.3rem;
     }
-    .book-info {}
     .book-title {
       font-family: 'Noto Serif JP', serif;
-      font-size: 1.0rem;
+      font-size: 1rem;
       font-weight: 700;
-      color: #f0ece4;
-      margin: 0 0 0.2rem;
+      color: var(--text-main);
+      margin-bottom: 0.2rem;
       line-height: 1.5;
     }
     .book-author {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
       color: var(--text-muted);
-      letter-spacing: 0.06em;
-      margin: 0 0 0.6rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
     }
-    .book-desc {
+    .book-comment {
+      font-family: 'Noto Serif JP', serif;
       font-size: 0.88rem;
-      line-height: 1.75;
-      color: var(--text-muted);
-      margin: 0;
+      color: var(--text-sub);
+      line-height: 1.8;
     }
-
-    .book-count-badge {
+    .book-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      background: var(--purple-dim);
+      color: var(--purple-light);
+      border: 1px solid rgba(85,37,131,0.3);
+      border-radius: 3px;
+      padding: 2px 7px;
+      margin-bottom: 0.5rem;
+    }
+    .books-intro-box {
+      background: linear-gradient(135deg, var(--bg-card) 0%, #1c1a38 100%);
+      border: 1px solid rgba(253,185,39,0.2);
+      border-radius: 12px;
+      padding: 2rem 2rem 1.8rem;
+      margin: 2rem 0 3rem;
+    }
+    .books-intro-box p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.95rem;
+      color: var(--text-sub);
+      line-height: 2;
+      margin-bottom: 0.8rem;
+    }
+    .books-intro-box p:last-child { margin-bottom: 0; }
+    .books-count-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.5rem;
+      background: var(--gold);
+      color: #1a0a00;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 1.1rem;
+      border-radius: 4px;
+      margin-bottom: 1.2rem;
+    }
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(253,185,39,0.3), transparent);
+      margin: 3rem 0;
+    }
+    .toc-box {
+      background: var(--bg-card-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+      margin: 2rem 0 3rem;
+    }
+    .toc-box h3 {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
-      letter-spacing: 0.1em;
-      background: rgba(212,175,55,0.12);
+      letter-spacing: 0.18em;
       color: var(--gold);
-      border: 1px solid rgba(212,175,55,0.3);
-      border-radius: 999px;
-      padding: 0.2rem 0.7rem;
-      margin-left: 0.5rem;
-      vertical-align: middle;
+      margin-bottom: 1rem;
     }
-
-    .book-toc {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      margin: 2rem 0;
-    }
-    .book-toc-title {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.15em;
-      color: var(--gold);
-      margin: 0 0 1rem;
-      text-transform: uppercase;
-    }
-    .book-toc ul {
+    .toc-box ol {
       list-style: none;
       padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
-    .book-toc li a {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      text-decoration: none;
+    .toc-box li a {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      transition: color 0.2s;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      transition: color 0.2s;
+      gap: 0.6rem;
     }
-    .book-toc li a:hover { color: var(--gold); }
-    .book-toc li a::before {
-      content: '→';
-      font-size: 0.75rem;
-      color: var(--gold);
-      opacity: 0.6;
+    .toc-box li a::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 1px;
+      background: var(--gold-dim);
+      flex-shrink: 0;
     }
+    .toc-box li a:hover { color: var(--gold); }
 
-    @media (max-width: 600px) {
-      .book-item { grid-template-columns: 2rem 1fr; gap: 0 0.8rem; padding: 1rem; }
-      .book-toc ul { grid-template-columns: 1fr; }
-      .book-category-sub { display: none; }
+    @media (max-width: 640px) {
+      .book-item { padding: 1rem 1.1rem; }
+      .books-intro-box { padding: 1.4rem 1.2rem; }
     }
   </style>
 </head>
@@ -207,611 +223,618 @@
 </nav>
 
 <main>
-  <article class="post-article">
-    <div class="post-hero">
-      <div class="container">
-        <span class="badge">本・読書</span>
-        <h1 class="post-title reveal">人生観が変わった<br>おすすめ本 46冊</h1>
-        <div class="post-meta reveal reveal-delay-1">
-          <span>2026.04.17</span>
-          <span>/</span>
-          <span>町川 大弥</span>
-        </div>
-        <div class="post-share reveal reveal-delay-1">
-          <span>📣 この記事をシェア</span>
-          <a href="https://twitter.com/intent/tweet?text=人生観が変わったおすすめ本46冊&url=https://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">X でシェア</a>
-          <a href="https://line.me/R/msg/text/?人生観が変わったおすすめ本46冊%0Ahttps://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">LINE</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">Facebook</a>
-        </div>
-      </div>
-    </div>
+  <div style="background-color:var(--bg-dark);">
+    <article class="post-article">
 
-    <div class="post-body">
-      <div class="container post-container">
+      <header class="post-header">
+        <span class="badge">読書・自己成長</span>
+        <h1 class="post-title">人生観が変わったおすすめ本 46冊</h1>
+        <p class="post-meta">2026.04.20 / 町川 大弥</p>
+      </header>
 
-        <div class="book-intro">
+      <div class="post-content">
+
+        <div class="books-intro-box reveal">
+          <div class="books-count-badge">📖 46 BOOKS</div>
           <p>
-            これまでの人生で「読んで本当に良かった」と思う本をまとめました。<br>
-            バレーボールの技術書ではなく、<strong>マインドセット・お金・人間関係・生き方</strong>といった、
-            生きる上での根っこになる本たちです。<br><br>
-            全46冊。ジャンルごとに分けているので、今の自分に必要なカテゴリーから読んでみてください。
-            一冊でも「自分の人生を変える本」に出会えたら嬉しいです。
+            バレーボールを強くなりたくて、最初は技術書ばかり読んでいた。でも、ある日気づいた——プレーを変えるより先に、自分の頭と心を変えないといけないと。
+          </p>
+          <p>
+            そこから読書にのめり込んで、今に至る。お金の使い方、時間の使い方、人との関わり方、自分の強みの見つけ方。気づいたら人生そのものが変わっていた。
+          </p>
+          <p>
+            この46冊は、ぼくの考え方・生き方・行動をかたちづくってくれた本たちです。カテゴリ別にまとめたので、今の自分に響くところから読んでみてください。
           </p>
         </div>
 
         <!-- 目次 -->
-        <div class="book-toc">
-          <p class="book-toc-title">— CONTENTS —</p>
-          <ul>
-            <li><a href="#cat1">🔥 継続と成長（10冊）</a></li>
-            <li><a href="#cat2">💰 お金とビジネス（10冊）</a></li>
-            <li><a href="#cat3">❤️ 恋愛と人間関係（5冊）</a></li>
-            <li><a href="#cat4">🧠 思考法と知的生活（8冊）</a></li>
-            <li><a href="#cat5">🌟 生き方と哲学（9冊）</a></li>
-            <li><a href="#cat6">💡 メンタルと自己理解（4冊）</a></li>
-          </ul>
+        <div class="toc-box reveal">
+          <h3>— CONTENTS —</h3>
+          <ol>
+            <li><a href="#cat1">① 人生観・考え方 ── 生き方の軸をつくる本</a></li>
+            <li><a href="#cat2">② 自己成長・習慣 ── 強くなるための本</a></li>
+            <li><a href="#cat3">③ お金・経済 ── お金の知識とマインド</a></li>
+            <li><a href="#cat4">④ 思考法・論理 ── 賢く考えるための本</a></li>
+            <li><a href="#cat5">⑤ 恋愛・人間関係 ── コミュニケーションの本</a></li>
+            <li><a href="#cat6">⑥ ビジネス・挑戦 ── 夢を持って動くための本</a></li>
+            <li><a href="#cat7">⑦ スポーツ・メンタル ── 勝負に強くなる本</a></li>
+            <li><a href="#cat8">⑧ ミニマル・シンプル ── 手放すことで得る本</a></li>
+          </ol>
         </div>
 
-        <!-- ===== CATEGORY 1 ===== -->
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ1 ===== -->
         <div class="book-category reveal" id="cat1">
-          <div class="book-category-header">
-            <span class="book-category-icon">🔥</span>
-            <h2 class="book-category-title">継続と成長</h2>
-            <span class="book-count-badge">10冊</span>
-            <span class="book-category-sub">PERSISTENCE &amp; GROWTH</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">01</span>
-              <div class="book-info">
-                <p class="book-title">人生の結論</p>
-                <p class="book-author">小池 一夫</p>
-                <p class="book-desc">漫画原作者として数々の名作を生み出した小池一夫が、85年の人生から導き出した「結論」。「人間が全て」という視点で書かれたこの本は、人との関わり方を根本から見直させてくれる。短い言葉の中に、生き方の本質が凝縮されている。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">02</span>
-              <div class="book-info">
-                <p class="book-title">1日ひとつだけ、強くなる</p>
-                <p class="book-author">梅原 大吾</p>
-                <p class="book-desc">世界一のプロゲーマーが語る「継続の哲学」。大きな目標より、今日1ミリだけ強くなることに集中する。この考え方はスポーツにも仕事にも当てはまる。成長を焦っている人に特に読んでほしい一冊。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">03</span>
-              <div class="book-info">
-                <p class="book-title">勝ち続ける意志力</p>
-                <p class="book-author">梅原 大吾</p>
-                <p class="book-desc">同じ梅原大吾による「勝ち続けること」の本質。負けることを恐れず、プロセスに向き合い続ける姿勢が、長期的な強さを生む。勝負の世界に生きる人への最高の教科書。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">04</span>
-              <div class="book-info">
-                <p class="book-title">GRIT やり抜く力</p>
-                <p class="book-author">アンジェラ・ダックワース</p>
-                <p class="book-desc">才能よりも「情熱×粘り強さ」が成功を決める。心理学者が科学的に証明した「やり抜く力（GRIT）」の正体。自分が続けられない理由と、続けられる人との違いが明確になる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">05</span>
-              <div class="book-info">
-                <p class="book-title">やりきる力</p>
-                <p class="book-author">堀江 貴文</p>
-                <p class="book-desc">「やりたいことをやりきる」ための思考法をホリエモンが語る。言い訳を排除し、シンプルに動くための指針が詰まっている。読んだ後にすぐ行動に移したくなる、そういう本。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">06</span>
-              <div class="book-info">
-                <p class="book-title">習慣を変えれば人生が変わる</p>
-                <p class="book-author">マーク・レクアウ</p>
-                <p class="book-desc">人生は習慣の積み重ねでできている。良い習慣を身につけ、悪い習慣を手放すことで、人生は確実に変わる。シンプルなメッセージだけど、読み返すたびに刺さる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">07</span>
-              <div class="book-info">
-                <p class="book-title">一流の習慣</p>
-                <p class="book-author">カルロ・クマ</p>
-                <p class="book-desc">一流と呼ばれる人たちに共通する「日常の行動パターン」を分析した一冊。結果は突然生まれるのではなく、毎日の小さな選択の積み重ねだということを再確認させてくれる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">08</span>
-              <div class="book-info">
-                <p class="book-title">うまくいっている人の考え方</p>
-                <p class="book-author">ジェリー・ミンチントン</p>
-                <p class="book-desc">自己肯定感を高めるための100の言葉。短い格言が並ぶ構成で、通勤・通学中にも読める。「自分を好きになれない」「どうせ自分には無理」そう感じている人に特に響く本。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">09</span>
-              <div class="book-info">
-                <p class="book-title">スラムダンク勝利学</p>
-                <p class="book-author">辻 秀一</p>
-                <p class="book-desc">スラムダンクの名シーンとセリフをスポーツ心理学の観点から解説した名著。「ZONEに入る」「メンタルを整える」方法が、漫画の世界と結びつくことで圧倒的にわかりやすくなる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">10</span>
-              <div class="book-info">
-                <p class="book-title">ひゃくえむ。</p>
-                <p class="book-author">ちょ古っ都製本工房</p>
-                <p class="book-desc">陸上100mを舞台にした青春漫画。わずか10秒の勝負に全てをかける選手たちの葛藤と成長が、静かな熱量で描かれている。スポーツをやっている人なら必ず刺さる。「なぜ競うのか」を改めて考えさせてくれる。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CATEGORY 2 ===== -->
-        <div class="book-category reveal" id="cat2">
-          <div class="book-category-header">
-            <span class="book-category-icon">💰</span>
-            <h2 class="book-category-title">お金とビジネス</h2>
-            <span class="book-count-badge">10冊</span>
-            <span class="book-category-sub">MONEY &amp; BUSINESS</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">11</span>
-              <div class="book-info">
-                <p class="book-title">金持ち父さん貧乏父さん</p>
-                <p class="book-author">ロバート・キヨサキ</p>
-                <p class="book-desc">お金の教育を受けていない全ての人が最初に読むべき一冊。「資産と負債の違い」「お金のために働くのではなく、お金を働かせる」という概念が人生観を根底から変えた。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">12</span>
-              <div class="book-info">
-                <p class="book-title">お金の大学</p>
-                <p class="book-author">両学長</p>
-                <p class="book-desc">日本人のお金リテラシーを底上げするために書かれた、最もわかりやすいお金の入門書。貯める・稼ぐ・増やす・守る・使う、5つのチカラを軸に体系的に学べる。YouTubeと合わせて読むとさらに理解が深まる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">13</span>
-              <div class="book-info">
-                <p class="book-title">お金持ちになる黄金の羽の拾い方</p>
-                <p class="book-author">橘 玲</p>
-                <p class="book-desc">制度や税制の「抜け穴」を合理的に活用する方法を論じた刺激的な一冊。知識が直接お金になるという事実を、冷静な視点で教えてくれる。常識を疑う力が養われる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">14</span>
-              <div class="book-info">
-                <p class="book-title">経済評論家の父から息子への手紙</p>
-                <p class="book-author">山崎 元</p>
-                <p class="book-desc">お金・仕事・人生について「父から息子へ」という形式で書かれた珠玉の一冊。投資の本質から仕事の選び方まで、親戚の賢いおじさんに相談しているような感覚で読める。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">15</span>
-              <div class="book-info">
-                <p class="book-title">夢と金</p>
-                <p class="book-author">西野 亮廣</p>
-                <p class="book-desc">夢を持つだけでは足りない——お金の仕組みを理解しなければ、夢は実現しない。西野亮廣がクリエイターとビジネスマン両面から語る「夢×マネー」の本質。夢追い人こそ読むべき一冊。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">16</span>
-              <div class="book-info">
-                <p class="book-title">革命のファンファーレ 現代のお金と広告</p>
-                <p class="book-author">西野 亮廣</p>
-                <p class="book-desc">「お金」と「信用」の本質を、西野の活動を通じて解説した思想書。「無料で価値を出し、その先で稼ぐ」という逆転の発想が、これからの時代の生き方を示している。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">17</span>
-              <div class="book-info">
-                <p class="book-title">ユダヤ人大富豪の教え</p>
-                <p class="book-author">本田 健</p>
-                <p class="book-desc">ビジネスで出会った老富豪から学ぶ、お金と人生の哲学を物語形式で描いた名著。「好きなことで稼ぐ」「与えることで受け取る」という原則が、心に自然と染み込んでくる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">18</span>
-              <div class="book-info">
-                <p class="book-title">シリコンバレー最重要思想家 ナヴァル・ラヴィカント</p>
-                <p class="book-author">エリック・ジョルゲンソン</p>
-                <p class="book-desc">エンジェル投資家ナヴァルが語る「富と幸福の哲学」。お金は意志力で稼ぐのではなく、判断力で稼ぐもの——という考え方が、思考の次元を一段上げてくれる。短いのに密度が異常に高い。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">19</span>
-              <div class="book-info">
-                <p class="book-title">クラクションを鳴らせ 変わらない中古車業界への提言</p>
-                <p class="book-author">中野 優作</p>
-                <p class="book-desc">既存の業界の「おかしさ」に声を上げた男の記録。中古車業界という題材を通じて、「現状に甘んじず声を上げることの重要性」と「ビジネスの本質」が伝わってくる。変えることを諦めない勇気をもらえる本。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">20</span>
-              <div class="book-info">
-                <p class="book-title">成長以外全て死</p>
-                <p class="book-author">中野 勇作</p>
-                <p class="book-desc">「成長を止めることは死と同じだ」という過激なタイトルの通り、常に前へ進む姿勢を問い直す一冊。現状維持に甘んじている自分に気づかせてくれる、刺激的なメッセージが詰まっている。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CATEGORY 3 ===== -->
-        <div class="book-category reveal" id="cat3">
-          <div class="book-category-header">
-            <span class="book-category-icon">❤️</span>
-            <h2 class="book-category-title">恋愛と人間関係</h2>
-            <span class="book-count-badge">5冊</span>
-            <span class="book-category-sub">LOVE &amp; RELATIONSHIPS</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">21</span>
-              <div class="book-info">
-                <p class="book-title">LOVE理論</p>
-                <p class="book-author">水野 敬也</p>
-                <p class="book-desc">恋愛を「理論」として体系化した、笑えて使える異色の恋愛書。モテる人の行動パターンを言語化し、「なぜあの人はモテるのか」を解き明かす。読んでいて普通に面白い。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">22</span>
-              <div class="book-info">
-                <p class="book-title">スパルタ婚活塾</p>
-                <p class="book-author">水野 敬也</p>
-                <p class="book-desc">本気で「結婚」を目指す人への、厳しくも愛のある指南書。自分の現実を直視することから始まるこの本は、恋愛だけでなく「自己認識」の大切さも教えてくれる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">23</span>
-              <div class="book-info">
-                <p class="book-title">運命の恋を叶えるスタンダール</p>
-                <p class="book-author">水野 敬也</p>
-                <p class="book-desc">フランス文学の古典「恋愛論」を現代的に解釈した一冊。「恋とは結晶化である」——恋愛の本質を深く・美しく考えさせてくれる。恋愛を哲学として捉えたい人に。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">24</span>
-              <div class="book-info">
-                <p class="book-title">仕事も人間関係もうまくいく放っておく力</p>
-                <p class="book-author">枡野 俊明</p>
-                <p class="book-desc">禅僧が教える「関わりすぎない」生き方。人間関係の悩みの多くは、余計に踏み込んでしまうことから生まれる。適度な距離感と余白を持つことで、全てがうまく回り出す。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">25</span>
-              <div class="book-info">
-                <p class="book-title">俺か、俺以外か。ローランドという生き方</p>
-                <p class="book-author">ROLAND</p>
-                <p class="book-desc">「この世界には二種類の人間しかいない。俺か、俺以外か。」——ホスト界の帝王ローランドの言葉は、笑えるのに深い。自分に誇りを持つこと、圧倒的な自己肯定感の大切さを教えてくれる。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CATEGORY 4 ===== -->
-        <div class="book-category reveal" id="cat4">
-          <div class="book-category-header">
-            <span class="book-category-icon">🧠</span>
-            <h2 class="book-category-title">思考法と知的生活</h2>
-            <span class="book-count-badge">8冊</span>
-            <span class="book-category-sub">THINKING &amp; INTELLECT</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">26</span>
-              <div class="book-info">
-                <p class="book-title">Think clearly</p>
-                <p class="book-author">ロルフ・ドベリ</p>
-                <p class="book-desc">最新の心理学・行動経済学・哲学から導いた「より良く生きるための52の思考法」。人は無数の認知バイアスに支配されている——それを知るだけで、判断の質が格段に上がる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">27</span>
-              <div class="book-info">
-                <p class="book-title">Think Smart</p>
-                <p class="book-author">ロルフ・ドベリ</p>
-                <p class="book-desc">「間違った思い込みを避けて、賢く生き抜くための思考法」。Think clearlyの続編。人間がいかに非合理的な判断をするかを知ることで、より賢い選択ができるようになる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">28</span>
-              <div class="book-info">
-                <p class="book-title">ニュースダイエット</p>
-                <p class="book-author">ロルフ・ドベリ</p>
-                <p class="book-desc">「ニュースを見るのをやめなさい」という逆説的な提案。毎日ニュースを追うことで、かえって本質を見失う——この主張は衝撃的だったが、読み終わるころには完全に納得していた。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">29</span>
-              <div class="book-info">
-                <p class="book-title">think right</p>
-                <p class="book-author">ロルフ・ドベリ</p>
-                <p class="book-desc">誤った思い込みを排除し、正しく考えるための思考法。ドベリシリーズ4冊を通じて「人間の思考のクセ」が体系的に理解できる。全部読むと、世界の見え方が変わる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">30</span>
-              <div class="book-info">
-                <p class="book-title">具体と抽象</p>
-                <p class="book-author">細谷 功</p>
-                <p class="book-desc">「なぜ話が噛み合わない人がいるのか」——その答えは「具体と抽象のレベルが違う」から。この本を読んでから、コミュニケーションの問題の9割がこれで説明できることに気づいた。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">31</span>
-              <div class="book-info">
-                <p class="book-title">「具体⇄抽象」トレーニング</p>
-                <p class="book-author">細谷 功</p>
-                <p class="book-desc">前作の実践編。29の問いを通じて、具体と抽象を往来する思考力を鍛えるワークブック。読むだけでなく「考える」体験ができる。思考の筋トレとして定期的に戻りたい一冊。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">32</span>
-              <div class="book-info">
-                <p class="book-title">人生を面白くする 本物の教養</p>
-                <p class="book-author">出口 治明</p>
-                <p class="book-desc">ライフネット生命創業者が語る「教養の本質」。知識は「人・本・旅」から得るもの——という考え方は、知ることの楽しさを再発見させてくれた。歴史や文化を学ぶ意味が変わる一冊。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">33</span>
-              <div class="book-info">
-                <p class="book-title">7つの習慣</p>
-                <p class="book-author">スティーブン・R・コヴィー</p>
-                <p class="book-desc">自己啓発の永遠の古典。「主体的であること」「終わりを思い描くことから始める」など、7つの原則は何度読んでも新しい発見がある。人格を磨くことが真の成功への道だと教えてくれる。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CATEGORY 5 ===== -->
-        <div class="book-category reveal" id="cat5">
-          <div class="book-category-header">
-            <span class="book-category-icon">🌟</span>
-            <h2 class="book-category-title">生き方と哲学</h2>
-            <span class="book-count-badge">9冊</span>
-            <span class="book-category-sub">PHILOSOPHY OF LIFE</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">34</span>
-              <div class="book-info">
-                <p class="book-title">エッセンシャル思考</p>
-                <p class="book-author">グレッグ・マキューン</p>
-                <p class="book-desc">「より少なく、しかしより良く」——本当に大切なことだけにエネルギーを集中させる技術。全てにYESと言い続けることの弊害を知り、本質的なものを選ぶ力を磨く。人生の優先順位が劇的に変わった。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">35</span>
-              <div class="book-info">
-                <p class="book-title">限りある時間の使い方</p>
-                <p class="book-author">オリバー・バークマン</p>
-                <p class="book-desc">人生はたった4000週間しかない。「生産性を上げてやりたいことを全部やる」という幻想を捨て、有限性を受け入れることで初めて豊かに生きられる——という逆説的な時間哲学が刺さる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">36</span>
-              <div class="book-info">
-                <p class="book-title">不完全主義</p>
-                <p class="book-author">オリバー・バークマン</p>
-                <p class="book-desc">完璧を目指すことをやめる——それが逆に人生を豊かにする。完璧主義の罠から抜け出す思考法は、過度に自分を追い込んでしまう人に特に響く。「もっとゆるくていい」という許可を与えてくれる本。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">37</span>
-              <div class="book-info">
-                <p class="book-title">ロングゲーム</p>
-                <p class="book-author">ドリー・クラーク</p>
-                <p class="book-desc">短期的な成果を追わず、5年・10年単位の長期的な視点で生きることの重要性を説く。「今すぐ結果が出なくてもいい」という安心感と、大きな目標に向かって静かに積み上げる覚悟を与えてくれる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">38</span>
-              <div class="book-info">
-                <p class="book-title">すべては導かれている</p>
-                <p class="book-author">田坂 広志</p>
-                <p class="book-desc">偶然と必然の哲学。人生で起きること全ては、意味があって起きている——という視点を持つことで、困難な出来事への向き合い方が根本から変わる。深くて静かな本。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">39</span>
-              <div class="book-info">
-                <p class="book-title">手放す練習</p>
-                <p class="book-author">ミニマリストしぶ</p>
-                <p class="book-desc">モノを手放すことで、人生が軽くなる。ミニマリズムの本質は「少なく持つこと」ではなく「本当に大切なものだけを残すこと」。読んだ後、部屋の荷物だけでなく、人間関係も見直したくなる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">40</span>
-              <div class="book-info">
-                <p class="book-title">「ムダ」の省き方</p>
-                <p class="book-author">トーマスガジェマガ</p>
-                <p class="book-desc">テクノロジーを活用してムダな時間・作業・思考を削ぎ落とす実践的な方法論。「忙しい」は言い訳でしかない——という厳しくも的確な指摘が、時間の使い方を根本から変えてくれた。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">41</span>
-              <div class="book-info">
-                <p class="book-title">多動力</p>
-                <p class="book-author">堀江 貴文</p>
-                <p class="book-desc">一つのことに縛られず、複数の物事を同時に動かす「多動力」が、これからの時代の最強の武器になる。「飽きる力」を肯定してくれるこの本は、型にはまることへの恐怖を取り除いてくれた。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">42</span>
-              <div class="book-info">
-                <p class="book-title">夢をかなえるゾウ</p>
-                <p class="book-author">水野 敬也</p>
-                <p class="book-desc">ガネーシャが教える自己啓発。「靴を磨く」「コンビニでお釣りを募金する」など小さな行動の積み重ねが夢への道だというメッセージは、読むたびに背中を押してくれる。何度でも読み返したい名著。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CATEGORY 6 ===== -->
-        <div class="book-category reveal" id="cat6">
-          <div class="book-category-header">
-            <span class="book-category-icon">💡</span>
-            <h2 class="book-category-title">メンタルと自己理解</h2>
-            <span class="book-count-badge">4冊</span>
-            <span class="book-category-sub">MENTAL &amp; SELF-AWARENESS</span>
-          </div>
-          <div class="book-list">
-
-            <div class="book-item">
-              <span class="book-num">43</span>
-              <div class="book-info">
-                <p class="book-title">精神科医TOMMYが教える 1秒で不安が吹き飛ぶ言葉</p>
-                <p class="book-author">精神科医 TOMMY</p>
-                <p class="book-desc">不安やネガティブな感情を「言葉」で瞬時に切り替える技術。精神科医が現場で積み上げた知見が、シンプルかつ実践的にまとまっている。メンタルが揺らいでいるときに手元に置いておきたい一冊。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">44</span>
-              <div class="book-info">
-                <p class="book-title">幸福のための人間のレベル論</p>
-                <p class="book-author">藤本 シゲユキ</p>
-                <p class="book-desc">人間の意識には「レベル」があり、そのレベルによって見える世界が全く異なる——という人間観察の哲学書。「なぜあの人と話が合わないのか」「なぜ同じことが起きるのか」が腑に落ちる。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">45</span>
-              <div class="book-info">
-                <p class="book-title">嫌われた監督</p>
-                <p class="book-author">鈴木 忠平</p>
-                <p class="book-desc">落合博満・中日ドラゴンズ監督時代の8年間を追ったノンフィクション。孤独に徹し、選手に嫌われることを厭わなかったリーダーの哲学が、静かな筆致で描かれる。リーダーシップとは何かを問い直させる傑作。</p>
-              </div>
-            </div>
-
-            <div class="book-item">
-              <span class="book-num">46</span>
-              <div class="book-info">
-                <p class="book-title">CHANCE チャンス</p>
-                <p class="book-author">犬飼 ターボ</p>
-                <p class="book-desc">「チャンスをつかめる人」と「つかめない人」の決定的な違いとは何か。ビジネス小説の形式で、人生のターニングポイントの本質を学べる。読んだ後、目の前の出来事への向き合い方が変わる。</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ===== CLOSING ===== -->
-        <div class="book-intro" style="margin-top:3rem;">
-          <p>
-            以上、46冊でした。<br><br>
-            どれか一冊でも気になったものがあれば、ぜひ手に取ってみてください。
-            本との出会いは、人との出会いと同じくらい人生を変えると思っています。<br><br>
-            これからも「読んで良かった」と思える本があれば、このリストに追加していきます。
+          <div class="book-category-label">CATEGORY 01</div>
+          <h2>人生観・考え方 ── 生き方の軸をつくる本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            「どう生きるか」に正解はない。でも、自分なりの軸がないと流されてしまう。この本たちが、ぼくの価値観の土台をつくってくれた。
           </p>
-        </div>
+          <div class="book-list">
 
-        <!-- Share -->
-        <div class="post-share" style="margin:2rem 0;">
-          <span>📣 この記事をシェア</span>
-          <a href="https://twitter.com/intent/tweet?text=人生観が変わったおすすめ本46冊&url=https://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">X でシェア</a>
-          <a href="https://line.me/R/msg/text/?人生観が変わったおすすめ本46冊%0Ahttps://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">LINE</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://vb06mh-ops.github.io/hiroyavolley-blog/posts/recommended-books.html" target="_blank" rel="noopener" class="share-btn">Facebook</a>
-        </div>
-
-        <!-- Author -->
-        <div class="author-card reveal">
-          <div class="author-avatar">HM</div>
-          <div class="author-info">
-            <p class="author-name">町川大弥 / Hiroya Machikawa</p>
-            <p class="author-bio">バレーボール・ソフトバレー選手 | 元体育教師 | 香川県<br>「自分を信じれば、必ず上手くなれる。」</p>
-            <div class="author-links">
-              <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener">YouTube フォロー</a>
+            <div class="book-item">
+              <div class="book-num">No.01</div>
+              <div class="book-title">人生の結論</div>
+              <div class="book-author">小池一夫</div>
+              <div class="book-comment">
+                漫画原作者・小池一夫が80歳を超えて書いた、人生の本質を語る一冊。「人間関係が全て」「感情的にならない」など、シンプルで力強い言葉が積み重なる。派手さはないのに、読むたびに背筋が伸びる。
+              </div>
             </div>
+
+            <div class="book-item">
+              <div class="book-num">No.02</div>
+              <div class="book-title">うまくいっている人の考え方</div>
+              <div class="book-author">ジェリー・ミンチントン</div>
+              <div class="book-comment">
+                自己肯定感について書かれた本の中で、いちばん素直に読めた。「自分を大切にすること」が他者への貢献につながるという考えが、ぼくの行動の出発点になっている。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.03</div>
+              <div class="book-title">幸福のための人間のレベル論 気づいた人から幸せになれる</div>
+              <div class="book-author">藤本シゲユキ</div>
+              <div class="book-comment">
+                人間には「レベル」があって、自分のレベルを上げないと幸福も変わらないという考え方。厳しいけれど納得できる内容で、自分を客観視するきっかけになった。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.04</div>
+              <div class="book-title">すべては導かれている</div>
+              <div class="book-author">田坂広志</div>
+              <div class="book-comment">
+                人生に無駄な経験はない、すべてに意味があるという視点で書かれた本。うまくいかない時期に読んで、「今この状況も必要なんだ」と思えるようになった。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.05</div>
+              <div class="book-title">人生を面白くする 本物の教養</div>
+              <div class="book-author">出口治明</div>
+              <div class="book-comment">
+                ライフネット生命創業者が語る「教養」とは何か。専門知識より広い視野、情報より本物の知識——読んだ後に「もっと学びたい」という気持ちが湧いてくる本。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.06</div>
+              <div class="book-title">限りある時間の使い方</div>
+              <div class="book-author">オリバー・バークマン</div>
+              <div class="book-comment">
+                人生は4000週間しかない。その有限性を受け入れることで、逆に毎日が豊かになるという逆説的な本。「全部やろうとしなくていい」という言葉に救われた。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.07</div>
+              <div class="book-title">不完全主義 限りある人生を上手に過ごす方法</div>
+              <div class="book-author">オリバー・バークマン</div>
+              <div class="book-comment">
+                完璧主義をやめることで自由になれる、という考えを丁寧に解説した本。『限りある時間の使い方』と合わせて読むと、より深く理解できる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.08</div>
+              <div class="book-title">ロングゲーム 今、自分にとって一番意味のあることをするために</div>
+              <div class="book-author">ドリー・クラーク</div>
+              <div class="book-comment">
+                短期的な結果より長期的な視点で生きることの大切さを説く一冊。SNSの即時性に流されがちな時代に、自分のペースで本当にやりたいことに集中するヒントがある。
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Back -->
-        <div style="margin-top:2rem;">
-          <a href="../blog.html" class="read-more">← ブログ一覧に戻る</a>
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ2 ===== -->
+        <div class="book-category reveal" id="cat2">
+          <div class="book-category-label">CATEGORY 02</div>
+          <h2>自己成長・習慣 ── 強くなるための本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            バレーでもビジネスでも、毎日の積み重ねが全て。習慣と継続の力について書かれた本は、何度読んでも新しい発見がある。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.09</div>
+              <div class="book-title">１日ひとつだけ、強くなる</div>
+              <div class="book-author">梅原大吾</div>
+              <div class="book-comment">
+                世界初のプロゲーマー・梅原大吾の思考法。「１日ひとつだけ」という小さな継続が、長期的には誰にも負けない力になる。バレーボールにも直結する考え方で、何度も読み返している。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.10</div>
+              <div class="book-title">勝ち続ける意志力</div>
+              <div class="book-author">梅原大悟</div>
+              <div class="book-comment">
+                同じく梅原さんの著書。勝ち続けることへの執着と、それを支えるメンタルの作り方。トップに立つ人間がどういう思考で生きているかが伝わってくる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.11</div>
+              <div class="book-title">７つの習慣</div>
+              <div class="book-author">スティーブン・コヴィー</div>
+              <div class="book-comment">
+                自己啓発の古典中の古典。「主体的に動くこと」「終わりを思い描くこと」——この２つの習慣だけで、ぼくの行動パターンが大きく変わった。一度は読んでおくべき本。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.12</div>
+              <div class="book-title">エッセンシャル思考</div>
+              <div class="book-author">グレッグ・マキューン</div>
+              <div class="book-comment">
+                「より少なく、しかしより良く」。全てをやろうとするのではなく、本当に大切なことに集中する思考法。忙しいほど、この本に戻ってくる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.13</div>
+              <div class="book-title">習慣を変えれば人生が変わる</div>
+              <div class="book-author">マーク・レクアウ</div>
+              <div class="book-comment">
+                習慣の力についてシンプルにまとめられた本。難しい理論より「今日からすぐできること」が書かれていて、実践に移しやすい。読んだ翌日から行動が変わった。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.14</div>
+              <div class="book-title">やりきる力</div>
+              <div class="book-author">堀江貴文</div>
+              <div class="book-comment">
+                ホリエモンが語る「やり抜く」ことの本質。途中でやめてしまう人との差は才能じゃなく、やりきる習慣があるかどうか。言葉がストレートで、読んだあとに動きたくなる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.15</div>
+              <div class="book-title">多動力</div>
+              <div class="book-author">堀江貴文</div>
+              <div class="book-comment">
+                一つのことに縛られず、複数のことを同時にやり続ける力の大切さを説く本。「好きなことを掛け合わせる」という考えは、バレーと発信を組み合わせるきっかけになった。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.16</div>
+              <div class="book-title">GRIT やり抜く力</div>
+              <div class="book-author">アンジェラ・ダックワース</div>
+              <div class="book-comment">
+                才能よりも「情熱×粘り強さ」が成功を決める、という研究に基づいた本。バレーを続けていてよかったと思えた一冊。諦めたくなった時に読み返している。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.17</div>
+              <div class="book-title">一流の習慣</div>
+              <div class="book-author">カルロ・クマ</div>
+              <div class="book-comment">
+                世界で活躍する一流の人たちに共通する日常習慣をまとめた本。「成功者の真似から始める」という発想が明快で、すぐに取り入れられるものが多かった。
+              </div>
+            </div>
+
+          </div>
         </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ3 ===== -->
+        <div class="book-category reveal" id="cat3">
+          <div class="book-category-label">CATEGORY 03</div>
+          <h2>お金・経済 ── お金の知識とマインド</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            お金の勉強は学校では教えてくれない。でも知ってるか知らないかで、人生の選択肢が大きく変わる。早めに読んでおくほど得をする本たち。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.18</div>
+              <div class="book-title">金持ち父さん貧乏父さん</div>
+              <div class="book-author">ロバート・キヨサキ</div>
+              <div class="book-comment">
+                「資産と負債の違い」を教えてくれた本。お金の教科書として世界中で読まれている理由がわかった。学校で教わった「いい会社に就職しなさい」という価値観が根本から覆った。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.19</div>
+              <div class="book-title">お金の大学</div>
+              <div class="book-author">両学長</div>
+              <div class="book-comment">
+                節約・稼ぐ・投資・守る・使うという5つの力を分かりやすく解説した本。堅苦しくなく、マンガ感覚で読める。お金の全体像をつかむのに最適な入門書。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.20</div>
+              <div class="book-title">夢と金</div>
+              <div class="book-author">西野亮廣</div>
+              <div class="book-comment">
+                夢を実現するには「お金」と向き合うことが避けられない、という痛烈なメッセージ。クリエイターとして生きたいなら絶対に読んでほしい一冊。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.21</div>
+              <div class="book-title">お金持ちになる黄金の羽の拾い方 知的人生設計のすすめ</div>
+              <div class="book-author">橘玲</div>
+              <div class="book-comment">
+                日本の税制や法律の抜け穴を合法的に活用する方法を解説した本。社会の仕組みを知ることで、損をしない選択ができるようになる。知識は武器だと実感した。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.22</div>
+              <div class="book-title">経済評論家の父から息子への手紙 お金と人生と幸せについて</div>
+              <div class="book-author">山崎元</div>
+              <div class="book-comment">
+                亡くなる直前に息子へ向けて書かれた、お金と幸せについての手紙形式の本。純粋に生きることの大切さが伝わってきて、読後に涙が出そうになった。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ4 ===== -->
+        <div class="book-category reveal" id="cat4">
+          <div class="book-category-label">CATEGORY 04</div>
+          <h2>思考法・論理 ── 賢く考えるための本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            情報が溢れる時代に必要なのは、知識の量より「考える力」。これらの本はぼくの思考の枠組みを変えてくれた。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.23</div>
+              <div class="book-title">Think clearly 最新の学術研究から導いた、よりよい人生を送るための思考法</div>
+              <div class="book-author">ロルフ・ドベリ</div>
+              <div class="book-comment">
+                52個の思考ルールが書かれた本。「なぜ人間は判断を誤るのか」をデータに基づいて解説してくれる。読んで以来、感情に流された即断が明らかに減った。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.24</div>
+              <div class="book-title">Think Smart 間違った思い込みを避けて、賢く生き抜くための思考法</div>
+              <div class="book-author">ロルフ・ドベリ</div>
+              <div class="book-comment">
+                『Think clearly』の続編。認知バイアスに縛られずに行動するための52のルール。シリーズで読むと、思考の解像度がどんどん上がっていく感覚がある。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.25</div>
+              <div class="book-title">ニュースダイエット</div>
+              <div class="book-author">ロルフ・ドベリ</div>
+              <div class="book-comment">
+                ニュースを見るのをやめると、人生の質が上がる——という挑発的な内容の本。読んでからニュースとの付き合い方を根本的に見直した。情報の取り方が変わる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.26</div>
+              <div class="book-title">think right 誤った先入観を捨て、よりよい選択をするための思考法</div>
+              <div class="book-author">ロルフ・ドベリ</div>
+              <div class="book-comment">
+                ドベリシリーズの一冊。人間が陥りやすい52の思考の罠を解説する。繰り返し読んで、少しずつ自分の判断を磨いていくための本だと思っている。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.27</div>
+              <div class="book-title">具体と抽象</div>
+              <div class="book-author">細谷功</div>
+              <div class="book-comment">
+                具体的な話と抽象的な話を行き来できる人が、なぜ仕事も人間関係もうまくいくのかを解説した本。「なぜ話が伝わらないのか」の答えがここにある。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.28</div>
+              <div class="book-title">「具体⇄抽象」トレーニング 思考力が飛躍的にアップする29問</div>
+              <div class="book-author">細谷功</div>
+              <div class="book-comment">
+                『具体と抽象』の実践編。29の問いを通じて、思考の筋トレができる本。理論だけでなく練習まで一冊でできるのがありがたい。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ5 ===== -->
+        <div class="book-category reveal" id="cat5">
+          <div class="book-category-label">CATEGORY 05</div>
+          <h2>恋愛・人間関係 ── コミュニケーションの本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            人間関係はスポーツと同じで、学べば確実にうまくなる。恋愛の本だからといって侮れない——コミュニケーションの本質が詰まっている。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.29</div>
+              <div class="book-title">LOVE理論</div>
+              <div class="book-author">水野敬也</div>
+              <div class="book-comment">
+                笑えて実用的という最強の本。恋愛心理を体系化した「理論」として説明してくれるので、感覚でしか語られなかったことが言語化されている。男性は絶対に読むべき。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.30</div>
+              <div class="book-title">スパルタ婚活塾</div>
+              <div class="book-author">水野敬也</div>
+              <div class="book-comment">
+                厳しいタイトルだけど、本質は「自分を高めることが最強のモテ戦略」という話。自己投資の大切さを、恋愛という切り口で教えてくれる本。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.31</div>
+              <div class="book-title">運命の恋を叶えるスタンダール</div>
+              <div class="book-author">水野敬也</div>
+              <div class="book-comment">
+                古典文学をベースにした恋愛哲学の本。「恋愛とは相手を理想化する行為である」という視点が新鮮で、人間の感情の仕組みについて深く考えさせられた。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.32</div>
+              <div class="book-title">仕事も人間関係もうまくいく放っておく力</div>
+              <div class="book-author">枡野俊明</div>
+              <div class="book-comment">
+                禅の考え方をベースに「関わりすぎない」ことの大切さを説く本。チームスポーツをやっていると、全員と深く関わろうとして疲弊することがある。この本が教えてくれた「適度な距離感」はすごく楽になれた。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.33</div>
+              <div class="book-title">精神科医TOMMYが教える１秒で不安が吹き飛ぶ言葉</div>
+              <div class="book-author">精神科医TOMMY</div>
+              <div class="book-comment">
+                不安や焦りを感じた瞬間に読める、短い言葉の集まり。試合前の緊張や、スランプ中のモヤモヤを和らげてくれた。常に手元に置いておきたい一冊。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ6 ===== -->
+        <div class="book-category reveal" id="cat6">
+          <div class="book-category-label">CATEGORY 06</div>
+          <h2>ビジネス・挑戦 ── 夢を持って動くための本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            「やってみる」という勇気をくれた本たち。成功者の思考法を盗むのは、最も速い成長の近道だと思っている。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.34</div>
+              <div class="book-title">夢をかなえるゾウ</div>
+              <div class="book-author">水野敬也</div>
+              <div class="book-comment">
+                ガネーシャというインドの神様が主人公に課題を与える形式の小説。読みやすいのに本質的な行動変容が起きる不思議な本。シリーズ全部読んだ。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.35</div>
+              <div class="book-title">CHANCE チャンス</div>
+              <div class="book-author">犬飼ターボ</div>
+              <div class="book-comment">
+                ビジネス成功者との対話を通じて成長していく小説形式の本。「チャンスを掴める人は準備している人」というメッセージが刺さった。読みやすく一気に読める。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.36</div>
+              <div class="book-title">革命のファンファーレ 現代のお金と広告</div>
+              <div class="book-author">西野亮廣</div>
+              <div class="book-comment">
+                芸人からクリエイターへと転身した西野さんが語る、現代のマーケティングとお金の話。「信用が資本になる時代」という考えが、発信活動を続けるモチベーションになっている。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.37</div>
+              <div class="book-title">クラクションを鳴らせ 変わらない中古車業界への提言</div>
+              <div class="book-author">中野優作</div>
+              <div class="book-comment">
+                業界の常識を破ろうとする男の話。「この業界、おかしくない？」という問いを持ち、実際に動いた人間の話は圧倒的にリアルで面白い。どんな業界にも応用できる考え方がある。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.38</div>
+              <div class="book-title">成長以外全て死</div>
+              <div class="book-author">中野勇作</div>
+              <div class="book-comment">
+                タイトルの通り、圧倒的な成長志向で書かれた本。「成長しない選択は死と同じ」という過激なメッセージだが、読むと自然と火がつく。停滞を感じたとき読み返している。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.39</div>
+              <div class="book-title">ユダヤ人大富豪の教え</div>
+              <div class="book-author">本田健</div>
+              <div class="book-comment">
+                ユダヤ人実業家の教えを通じてお金と人生の哲学を学ぶ本。「お金は喜びの交換」という考え方が、お金へのネガティブなイメージを完全に変えてくれた。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.40</div>
+              <div class="book-title">シリコンバレー最重要思想家ナヴァル・ラヴィカント</div>
+              <div class="book-author">エリック・ジョルゲンソン</div>
+              <div class="book-comment">
+                投資家ナヴァルの思想をまとめた本。「お金持ちになるには、自分の時間を切り売りするのをやめろ」という言葉が衝撃的だった。働き方と資産形成の考え方が根本から変わった。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ7 ===== -->
+        <div class="book-category reveal" id="cat7">
+          <div class="book-category-label">CATEGORY 07</div>
+          <h2>スポーツ・メンタル ── 勝負に強くなる本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            バレーボール選手として直接響いた本たち。勝負の場で発揮できる強さは、技術だけじゃなくメンタルから生まれる。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.41</div>
+              <div class="book-title">俺か、俺以外か。ローランドという生き方</div>
+              <div class="book-author">ROLAND</div>
+              <div class="book-comment">
+                ホスト界のカリスマ・ローランドの思考録。「俺か、俺以外か」というシンプルな自己肯定感の塊。読んでいると、自分に自信を持つことがかっこいいと思えてくる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.42</div>
+              <div class="book-title">スラムダンク勝利学</div>
+              <div class="book-author">辻秀一</div>
+              <div class="book-comment">
+                スポーツ心理学をスラムダンクを題材に解説した本。「ゾーンに入る」「フロー状態」など、試合で最高のパフォーマンスを出すための心理的準備がわかる。バレー選手に全員読んでほしい。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.43</div>
+              <div class="book-title">嫌われた監督 落合博満は中日をどう変えたのか</div>
+              <div class="book-author">鈴木忠平</div>
+              <div class="book-comment">
+                中日ドラゴンズの黄金期を作った落合博満監督の8年間を描いたノンフィクション。「結果にコミットする姿勢」「信念を曲げない生き方」が、これほどリアルに伝わってくる本はない。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.44</div>
+              <div class="book-title">ひゃくえむ</div>
+              <div class="book-author">ほったゆみ・河野慶</div>
+              <div class="book-comment">
+                100メートル走に打ち込む中学生の物語。スポーツに青春を賭けることの美しさと残酷さが描かれている。バレーを続けているぼくには刺さりすぎる部分があった。読後の余韻が長い。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ===== カテゴリ8 ===== -->
+        <div class="book-category reveal" id="cat8">
+          <div class="book-category-label">CATEGORY 08</div>
+          <h2>ミニマル・シンプル ── 手放すことで得る本</h2>
+          <p style="font-family:'Noto Serif JP',serif;font-size:0.9rem;color:var(--text-sub);line-height:1.9;margin-bottom:1.5rem;">
+            持ちすぎること・考えすぎることをやめたとき、本当に大切なものが見えてくる。引き算の哲学を教えてくれた本たち。
+          </p>
+          <div class="book-list">
+
+            <div class="book-item">
+              <div class="book-num">No.45</div>
+              <div class="book-title">手放す練習 ミニマリスト式悩まない人生のつくり方</div>
+              <div class="book-author">ミニマリストしぶ</div>
+              <div class="book-comment">
+                モノだけでなく、感情・人間関係・こだわりを手放す方法を教えてくれる本。「持たないこと」が豊かさにつながるという感覚を初めて実感した。部屋の整理から人生の整理まで応用できる。
+              </div>
+            </div>
+
+            <div class="book-item">
+              <div class="book-num">No.46</div>
+              <div class="book-title">「ムダ」の省き方</div>
+              <div class="book-author">トーマスガジェマガ</div>
+              <div class="book-comment">
+                デジタルガジェットを活用して、日常のムダな作業を減らす方法を紹介した本。時間的・精神的なムダを省くことで、本当にやりたいことに使える時間が増える。現代人に刺さる実用書。
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- まとめ -->
+        <blockquote class="post-quote reveal">
+          本を読むことで、ぼくは確実に変わった。でも変わったのは知識じゃなく、行動だったと思う。読んだ本の内容をどう使うかが全て。この46冊が、あなたの何かを動かすきっかけになれたら嬉しい。
+        </blockquote>
+
+        <p style="font-family:'Noto Serif JP',serif;font-size:0.95rem;color:var(--text-sub);line-height:2;margin-top:2rem;">
+          読書は自分への投資の中で、最もコスパが高い。1,500円の本が人生を変えることがある。ぜひ、気になった一冊から手に取ってみてください。
+        </p>
+
+        <!-- CTA -->
+        <section class="post-cta-block" style="margin:3rem 0 2rem;padding:2rem;background:#1a1a2e;border:1px solid #7a5c00;border-radius:8px;text-align:center;">
+          <p style="color:#c8a84b;font-size:0.85rem;letter-spacing:0.1em;margin-bottom:0.5rem;">NEXT ACTION</p>
+          <p style="color:#f5f0e8;font-size:1rem;margin-bottom:1.5rem;">この記事が役に立ったら、次のアクションへ</p>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;align-items:center;">
+            <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" style="display:inline-block;background:#c8a84b;color:#1a1a2e;padding:0.75rem 2rem;border-radius:4px;text-decoration:none;font-weight:bold;width:260px;">YouTube で動画を見る</a>
+            <a href="https://x.com/machikawahiroya" target="_blank" rel="noopener" style="display:inline-block;background:#000;color:#fff;padding:0.75rem 2rem;border-radius:4px;text-decoration:none;width:260px;border:1px solid #333;">X でフォローする</a>
+            <a href="mailto:vb06mh@gmail.com" style="display:inline-block;border:1px solid #c8a84b;color:#c8a84b;padding:0.75rem 2rem;border-radius:4px;text-decoration:none;width:260px;">質問・感想を送る</a>
+          </div>
+        </section>
 
       </div>
-    </div>
-  </article>
+
+      <footer class="post-footer">
+        <a href="../blog.html" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+
+    </article>
+  </div>
 </main>
 
-<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
-  <p><span id="fy"></span> Hiroya
-    <script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script>
-    Machikawa | 香川県バレーボール・ソフトバレーブログ
-  </p>
+  <p><span id="fy"></span> Hiroya<script>document.getElementById("fy").textContent="© "+new Date().getFullYear();</script> Machikawa | 香川県バレーボール・ソフトバレー</p>
   <a href="https://www.youtube.com/@Hiroyavolley" target="_blank" rel="noopener" class="footer-yt">▶ YouTube hiroyavolley</a>
 </footer>
 
 <script>
-  /* ── Header scroll ── */
-  const header = document.getElementById('site-header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 48);
-  }, { passive: true });
-
-  /* ── Hamburger ── */
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
   hamburger.addEventListener('click', () => { mobileNav.classList.toggle('open'); });
   document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
-      mobileNav.classList.remove('open');
-    }
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) mobileNav.classList.remove('open');
   });
 
-  /* ── Scroll Reveal ── */
-  const revealEls = document.querySelectorAll('.reveal');
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -819,13 +842,15 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
-  revealEls.forEach(el => observer.observe(el));
+  }, { threshold: 0.08 });
+  reveals.forEach(el => observer.observe(el));
 
-  /* Hero immediate reveal */
-  document.querySelectorAll('.post-hero .reveal').forEach((el, i) => {
-    setTimeout(() => el.classList.add('revealed'), 80 + i * 60);
+  // Header scroll effect
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
   });
 </script>
+  <script src="../js/post-enhancements.js"></script>
 </body>
 </html>
