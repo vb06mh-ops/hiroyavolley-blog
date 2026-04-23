@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /admin.css
 
+# Googlebot 専用設定
+User-agent: Googlebot
+Allow: /
+
+# サイトマップ（複数検索エンジン対応）
 Sitemap: https://vb06mh-ops.github.io/hiroyavolley-blog/sitemap.xml
