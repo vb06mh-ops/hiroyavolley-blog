@@ -1,34 +1,233 @@
 [
-  {"id":"post-004","title":"【ソフトバレー】スパイクの打点を上げる方法","description":"スパイクの打点を高くするための3つのポイントを解説。ジャンプ力とタイミングの改善法。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-004.html"},
-  {"id":"post-005","title":"【ソフトバレー】ブロックの基本とタイミング","description":"ブロックで相手のスパイクを止めるための基本姿勢とジャンプのタイミングを徹底解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-005.html"},
-  {"id":"post-006","title":"【ソフトバレー】レシーブが上達する3つのコツ","description":"レシーブ力を劇的に上げる練習法と体の使い方を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-006.html"},
-  {"id":"post-007","title":"【ソフトバレー】サーブの種類と使い分け","description":"フローターサーブ、ジャンプサーブなど様々なサーブの打ち方と使い分けを解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-007.html"},
-  {"id":"post-008","title":"【ソフトバレー】トスの精度を上げる練習法","description":"トスの安定性を高めるための毎日できる練習方法を紹介。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-008.html"},
-  {"id":"post-009","title":"【ソフトバレー】アタックラインの使い方","description":"アタックラインを活用した効果的な攻撃パターンを解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-009.html"},
-  {"id":"post-010","title":"【ソフトバレー】フローターサーブの打ち方","description":"フローターサーブの基本フォームと変化球の出し方を徹底解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-010.html"},
-  {"id":"post-011","title":"【ソフトバレー】チームの連携を高める方法","description":"チーム全体の連携力を高めるための練習法とコミュニケーション術。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-011.html"},
-  {"id":"post-012","title":"【ソフトバレー】ジャンプ力を上げるトレーニング","description":"スパイクとブロックに直結するジャンプ力向上トレーニングを紹介。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-012.html"},
-  {"id":"post-013","title":"【ソフトバレー】スパイクの腕の振り方","description":"威力のあるスパイクを打つための正しい腕の振り方を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-013.html"},
-  {"id":"post-014","title":"【ソフトバレー】アンダーレシーブの基本フォーム","description":"アンダーレシーブの正しい姿勢と面の作り方を解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-014.html"},
-  {"id":"post-015","title":"【ソフトバレー】オーバーハンドパスの安定化","description":"オーバーハンドパスを安定させるための手の形とポジション取りを解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-015.html"},
-  {"id":"post-016","title":"【ソフトバレー】ブロックのフォーメーション","description":"ダブルブロックなどフォーメーション別のブロック戦術を解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-016.html"},
-  {"id":"post-017","title":"【ソフトバレー】スパイクの助走とタイミング","description":"タイミングよくスパイクを打つための助走の踏み切り方を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-017.html"},
-  {"id":"post-018","title":"【ソフトバレー】試合で使えるフェイント技術","description":"ブロッカーを騙すフェイントの種類と効果的な使い方を解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-018.html"},
-  {"id":"post-019","title":"【ソフトバレー】サービスエースを狙うコース","description":"相手の苦手なコースを突くサービスエースの狙い方を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-019.html"},
-  {"id":"post-020","title":"【ソフトバレー】ディグの反応速度を上げる","description":"鋭いスパイクに対応するディグの反応速度向上トレーニング。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-020.html"},
-  {"id":"post-021","title":"【ソフトバレー】セッターの役割と動き方","description":"チームを動かすセッターとしての判断力と動き方を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-021.html"},
-  {"id":"post-022","title":"【ソフトバレー】レフトからのクロススパイク","description":"レフトポジションからの強力なクロスコーススパイクを解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-022.html"},
-  {"id":"post-023","title":"【ソフトバレー】サーブレシーブのポジション","description":"サーブレシーブの基本フォーメーションとポジション取りを解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-023.html"},
-  {"id":"post-024","title":"【ソフトバレー】ブロックアウトを狙う打ち方","description":"ブロッカーの手をかすめてアウトを取る打ち方のコツ。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-024.html"},
-  {"id":"post-025","title":"【ソフトバレー】体幹トレーニングの重要性","description":"バレーボールに欠かせない体幹の鍛え方と効果を解説。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-025.html"},
-  {"id":"post-026","title":"【ソフトバレー】バックアタックの習得方法","description":"バックゾーンからのアタックを習得するための練習法。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-026.html"},
-  {"id":"post-027","title":"【ソフトバレー】ラリーを制する粘りのレシーブ","description":"長いラリーを制するためのレシーブの粘り方と体力管理。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-027.html"},
-  {"id":"post-028","title":"【ソフトバレー】スパイクの打ち分けテクニック","description":"コース・スピード・角度を使い分けるスパイク技術の解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-028.html"},
-  {"id":"post-029","title":"【ソフトバレー】ジャンプサーブの基礎","description":"迫力あるジャンプサーブを習得するためのステップアップ練習法。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-029.html"},
-  {"id":"post-030","title":"【ソフトバレー】ブロックとレシーブの連携","description":"ブロッカーとレシーバーが連携して失点を防ぐ守備戦術を解説。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-030.html"},
-  {"id":"post-031","title":"【ソフトバレー】試合前のウォームアップ","description":"試合前に行うべき効果的なウォームアップルーティンを紹介。","category":"バレーボール上達理論","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-031.html"},
-  {"id":"post-032","title":"【ソフトバレー】スパイクの威力を高める筋トレ","description":"スパイクの威力を上げる上半身・下半身の筋トレメニューを紹介。","category":"ソフトバレーボール","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-032.html"},
-  {"id":"post-033","title":"【ソフトバレー】メンタルの鍛え方","description":"試合でのプレッシャーを力に変えるメンタルトレーニング法。","category":"Mamba Mentality","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-033.html"},
-  {"id":"post-034","title":"【ソフトバレー】試合で緊張しないための準備","description":"本番で実力を発揮するための緊張対策と事前準備を解説。","category":"Mamba Mentality","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-034.html"},
-  {"id":"post-035","title":"【ソフトバレー】継続が力をつくる習慣術","description":"毎日の練習を習慣化して確実に上達するための行動術。","category":"今日が人生で一番若い日","url":"https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-035.html"}
+  {
+    "id": "post-004",
+    "title": "【ソフトバレー】スパイクの打点を上げる方法",
+    "description": "スパイクの打点を高くするための3つのポイントを解説。ジャンプ力とタイミングの改善法。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-004.html"
+  },
+  {
+    "id": "post-005",
+    "title": "【ソフトバレー】ブロックの基本とタイミング",
+    "description": "ブロックで相手のスパイクを止めるための基本姿勢とジャンプのタイミングを徹底解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-005.html"
+  },
+  {
+    "id": "post-006",
+    "title": "【ソフトバレー】レシーブが上達する3つのコツ",
+    "description": "レシーブ力を劇的に上げる練習法と体の使い方を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-006.html"
+  },
+  {
+    "id": "post-007",
+    "title": "【ソフトバレー】サーブの種類と使い分け",
+    "description": "フローターサーブ、ジャンプサーブなど様々なサーブの打ち方と使い分けを解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-007.html"
+  },
+  {
+    "id": "post-008",
+    "title": "【ソフトバレー】トスの精度を上げる練習法",
+    "description": "トスの安定性を高めるための毎日できる練習方法を紹介。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-008.html"
+  },
+  {
+    "id": "post-009",
+    "title": "【ソフトバレー】アタックラインの使い方",
+    "description": "アタックラインを活用した効果的な攻撃パターンを解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-009.html"
+  },
+  {
+    "id": "post-010",
+    "title": "【ソフトバレー】フローターサーブの打ち方",
+    "description": "フローターサーブの基本フォームと変化球の出し方を徹底解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-010.html"
+  },
+  {
+    "id": "post-011",
+    "title": "【ソフトバレー】チームの連携を高める方法",
+    "description": "チーム全体の連携力を高めるための練習法とコミュニケーション術。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-011.html"
+  },
+  {
+    "id": "post-012",
+    "title": "【ソフトバレー】ジャンプ力を上げるトレーニング",
+    "description": "スパイクとブロックに直結するジャンプ力向上トレーニングを紹介。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-012.html"
+  },
+  {
+    "id": "post-013",
+    "title": "【ソフトバレー】スパイクの腕の振り方",
+    "description": "威力のあるスパイクを打つための正しい腕の振り方を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-013.html"
+  },
+  {
+    "id": "post-014",
+    "title": "【ソフトバレー】アンダーレシーブの基本フォーム",
+    "description": "アンダーレシーブの正しい姿勢と面の作り方を解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-014.html"
+  },
+  {
+    "id": "post-015",
+    "title": "【ソフトバレー】オーバーハンドパスの安定化",
+    "description": "オーバーハンドパスを安定させるための手の形とポジション取りを解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-015.html"
+  },
+  {
+    "id": "post-016",
+    "title": "【ソフトバレー】ブロックのフォーメーション",
+    "description": "ダブルブロックなどフォーメーション別のブロック戦術を解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-016.html"
+  },
+  {
+    "id": "post-017",
+    "title": "【ソフトバレー】スパイクの助走とタイミング",
+    "description": "タイミングよくスパイクを打つための助走の踏み切り方を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-017.html"
+  },
+  {
+    "id": "post-018",
+    "title": "【ソフトバレー】試合で使えるフェイント技術",
+    "description": "ブロッカーを騙すフェイントの種類と効果的な使い方を解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-018.html"
+  },
+  {
+    "id": "post-019",
+    "title": "【ソフトバレー】サービスエースを狙うコース",
+    "description": "相手の苦手なコースを突くサービスエースの狙い方を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-019.html"
+  },
+  {
+    "id": "post-020",
+    "title": "【ソフトバレー】ディグの反応速度を上げる",
+    "description": "鋭いスパイクに対応するディグの反応速度向上トレーニング。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-020.html"
+  },
+  {
+    "id": "post-021",
+    "title": "【ソフトバレー】セッターの役割と動き方",
+    "description": "チームを動かすセッターとしての判断力と動き方を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-021.html"
+  },
+  {
+    "id": "post-022",
+    "title": "【ソフトバレー】レフトからのクロススパイク",
+    "description": "レフトポジションからの強力なクロスコーススパイクを解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-022.html"
+  },
+  {
+    "id": "post-023",
+    "title": "【ソフトバレー】サーブレシーブのポジション",
+    "description": "サーブレシーブの基本フォーメーションとポジション取りを解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-023.html"
+  },
+  {
+    "id": "post-024",
+    "title": "【ソフトバレー】ブロックアウトを狙う打ち方",
+    "description": "ブロッカーの手をかすめてアウトを取る打ち方のコツ。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-024.html"
+  },
+  {
+    "id": "post-025",
+    "title": "【ソフトバレー】体幹トレーニングの重要性",
+    "description": "バレーボールに欠かせない体幹の鍛え方と効果を解説。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-025.html"
+  },
+  {
+    "id": "post-026",
+    "title": "【ソフトバレー】バックアタックの習得方法",
+    "description": "バックゾーンからのアタックを習得するための練習法。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-026.html"
+  },
+  {
+    "id": "post-027",
+    "title": "【ソフトバレー】ラリーを制する粘りのレシーブ",
+    "description": "長いラリーを制するためのレシーブの粘り方と体力管理。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-027.html"
+  },
+  {
+    "id": "post-028",
+    "title": "【ソフトバレー】スパイクの打ち分けテクニック",
+    "description": "コース・スピード・角度を使い分けるスパイク技術の解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-028.html"
+  },
+  {
+    "id": "post-029",
+    "title": "【ソフトバレー】ジャンプサーブの基礎",
+    "description": "迫力あるジャンプサーブを習得するためのステップアップ練習法。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-029.html"
+  },
+  {
+    "id": "post-030",
+    "title": "【ソフトバレー】ブロックとレシーブの連携",
+    "description": "ブロッカーとレシーバーが連携して失点を防ぐ守備戦術を解説。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-030.html"
+  },
+  {
+    "id": "post-031",
+    "title": "【ソフトバレー】試合前のウォームアップ",
+    "description": "試合前に行うべき効果的なウォームアップルーティンを紹介。",
+    "category": "バレーボール上達理論",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-031.html"
+  },
+  {
+    "id": "post-032",
+    "title": "【ソフトバレー】スパイクの威力を高める筋トレ",
+    "description": "スパイクの威力を上げる上半身・下半身の筋トレメニューを紹介。",
+    "category": "ソフトバレーボール",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-032.html"
+  },
+  {
+    "id": "post-033",
+    "title": "【ソフトバレー】メンタルの鍛え方",
+    "description": "試合でのプレッシャーを力に変えるメンタルトレーニング法。",
+    "category": "Mamba Mentality",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-033.html"
+  },
+  {
+    "id": "post-034",
+    "title": "【ソフトバレー】試合で緊張しないための準備",
+    "description": "本番で実力を発揮するための緊張対策と事前準備を解説。",
+    "category": "Mamba Mentality",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-034.html"
+  },
+  {
+    "id": "post-035",
+    "title": "【ソフトバレー】継続が力をつくる習慣術",
+    "description": "毎日の練習を習慣化して確実に上達するための行動術。",
+    "category": "今日が人生で一番若い日",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-035.html"
+  },
+  {
+    "id": "post-043",
+    "title": "ソフトバレーのブロックが上達する3つのコツ｜「吸い込み」を防いでワンタッチを取る",
+    "description": "吸い込みを防ぎ、ワンタッチで繋ぎ、駆け引きで相手を惑わす。ソフトバレーのブロックが上達する3つのコツを解説。",
+    "category": "ブロック",
+    "url": "https://vb06mh-ops.github.io/hiroyavolley-blog/posts/post-043.html"
+  }
 ]
